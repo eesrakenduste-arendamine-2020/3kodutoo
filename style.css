@@ -1,0 +1,25 @@
+:root {
+    --primary-color: url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
+    /* hsl(271, 50%, 50%) */
+    --tint-light: #FBFCFF;
+    --tint-medium: #DFE1E7;
+    --tint-dark: #333333;
+}
+
+body {
+    background: var(--primary-color);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    background-color: var(--tint-light);
+    width: 55vmin;
+    height: 65vmin;
+    border-radius: 1em;
+    align-self: center;
+}
