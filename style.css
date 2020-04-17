@@ -1,5 +1,5 @@
 :root {
-    --primary-color: url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
+    --primary-color: 0 0 / 20vmax url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
     /* hsl(271, 50%, 50%) */
     --tint-light: #FBFCFF;
     --tint-medium: #DFE1E7;
