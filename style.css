@@ -19,6 +19,7 @@ body {
 
 #container {
     display: flex;
+    flex-direction: column;
     position: relative;
     background-color: var(--tint-light);
     width: 55vmin;
@@ -48,8 +49,29 @@ body {
     border-top: var(--shadow-size) solid var(--tint-black);
 }
 
-#display {}
+#container>* {
+    padding: 5vmin;
+}
+
+#display {
+    height: 12vh;
+}
 
 #keys {
     display: grid;
+    grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
+    user-select: none;
+    justify-items: center;
+}
+
+.key {
+    text-align: center;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+#equal {
+    grid-area: equal;
 }
