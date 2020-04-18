@@ -6,6 +6,8 @@
     --tint-dark: #333;
     --tint-black: #111;
     --shadow-size: 3vmin;
+    --calculator-width: 50vmin;
+    --calculator-height: 65vmin;
 }
 
 body {
@@ -22,8 +24,8 @@ body {
     flex-direction: column;
     position: relative;
     background-color: var(--tint-light);
-    width: 55vmin;
-    height: 65vmin;
+    height: var(--calculator-height);
+    width: var(--calculator-width);
     box-shadow: var(--shadow-size) var(--shadow-size) var(--tint-black);
     align-self: center;
 }
