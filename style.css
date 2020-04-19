@@ -1,5 +1,5 @@
 :root {
-    --primary-color: 0 0 / 20vmax url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
+    --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
     /* hsl(271, 50%, 50%) */
     --tint-light: #fbfcff;
     --tint-medium: #dfe1e7;
@@ -14,41 +14,41 @@ body {
     background: var(--primary-color);
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: var(--calculator-width) var(--shadow-size);
+    grid-template-rows: var(--calculator-height) var(--shadow-size);
+    grid-template-areas: "calculator shadow-right" "shadow-bottom .";
     justify-content: center;
+    align-content: center;
+    font-size: 4rem;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    position: relative;
     background-color: var(--tint-light);
     height: var(--calculator-height);
     width: var(--calculator-width);
-    box-shadow: var(--shadow-size) var(--shadow-size) var(--tint-black);
     align-self: center;
+    grid-area: calculator;
 }
 
-#container::before, #container::after {
-    content: "";
+.shadow {
+    background-color: var(--tint-black);
+}
+
+#shadow-right {
+    height: var(--calculator-height);
     width: var(--shadow-size);
-    height: 0;
-    position: absolute;
-    border-left: var(--shadow-size) solid transparent;
-    border-right: var(--shadow-size) solid transparent;
+    grid-area: shadow-right;
+    transform: skewY(45deg) translateY(calc(var(--shadow-size) / 2));
 }
 
-#container::before {
-    right: calc(var(--shadow-size) * -1);
-    top: 0.0565vmin;
-    border-bottom: var(--shadow-size) solid var(--tint-black);
-    z-index: -1;
-}
-
-#container::after {
-    bottom: calc(var(--shadow-size) * -1);
-    border-top: var(--shadow-size) solid var(--tint-black);
+#shadow-bottom {
+    height: var(--shadow-size);
+    width: var(--calculator-width);
+    grid-area: shadow-bottom;
+    transform: skewX(45deg) translateX(calc(var(--shadow-size) / 2));
 }
 
 #container>* {
