@@ -20,7 +20,8 @@ body {
     grid-template-areas: "calculator shadow-right" "shadow-bottom .";
     justify-content: center;
     align-content: center;
-    font-size: 4rem;
+    font-size: 7vmin;
+    margin: 0;
 }
 
 #container {
@@ -51,24 +52,25 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, var(--shadow-size) 100%);
 }
 
-#container>* {
-    padding: 5vmin;
-}
-
 #display {
-    height: 12vh;
+    height: 16vh;
+    padding: 2vmin;
 }
 
 #keys {
+    margin: auto 0 0 0;
     display: grid;
     grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
     user-select: none;
+    padding: 2vmin;
     justify-items: center;
     align-content: center;
 }
 
-.key {}
+.key {
+    padding: 0.5vmin;
+}
 
 #backspace {
     grid-area: backspace;
