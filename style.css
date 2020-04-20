@@ -38,17 +38,17 @@ body {
 }
 
 #shadow-right {
-    height: var(--calculator-height);
+    height: calc(var(--calculator-height) + var(--shadow-size));
     width: var(--shadow-size);
-    grid-area: shadow-right;
-    transform: skewY(45deg) translateY(calc(var(--shadow-size) / 2));
+    grid-area: shadow-right / auto / 2;
+    clip-path: polygon(0 0, 100% var(--shadow-size), 100% 100%, 0 100%);
 }
 
 #shadow-bottom {
     height: var(--shadow-size);
-    width: var(--calculator-width);
-    grid-area: shadow-bottom;
-    transform: skewX(45deg) translateX(calc(var(--shadow-size) / 2));
+    width: calc(var(--calculator-width) + var(--shadow-size));
+    grid-area: shadow-bottom / auto / 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--shadow-size) 100%);
 }
 
 #container>* {
@@ -62,13 +62,13 @@ body {
 #keys {
     display: grid;
     grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
+    grid-template-columns: repeat(5, auto);
     user-select: none;
     justify-items: center;
+    align-content: center;
 }
 
-.key {
-    text-align: center;
-}
+.key {}
 
 #backspace {
     grid-area: backspace;
