@@ -5,7 +5,8 @@
     --tint-medium: #dfe1e7;
     --tint-dark: #333;
     --tint-black: #111;
-    --shadow-size: 4vmin;
+    --calculator-shadow-size: 4vmin;
+    --key-shadow-size: 1vmin;
     --calculator-width: 50vmin;
     --calculator-height: 65vmin;
 }
@@ -17,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 7vmin;
+    font-size: 5vmin;
     margin: 0;
 }
 
@@ -32,25 +33,25 @@ body {
     position: relative;
 }
 
-#container::before, #container::after {
+#container::before, #container::after, .key::before, .key::after {
     content: "";
     position: absolute;
     background: var(--tint-black);
 }
 
 #container::before {
-    right: calc(var(--shadow-size) * -1);
-    clip-path: polygon(0 0, 100% var(--shadow-size), 100% 100%, 0 100%);
+    right: calc(var(--calculator-shadow-size) * -1);
+    clip-path: polygon(0 0, 100% var(--calculator-shadow-size), 100% 100%, 0 100%);
     z-index: -1;
-    height: calc(var(--shadow-size) + var(--calculator-height));
-    width: var(--shadow-size);
+    height: calc(var(--calculator-shadow-size) + var(--calculator-height));
+    width: var(--calculator-shadow-size);
 }
 
 #container::after {
-    bottom: calc(var(--shadow-size) * -1);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--shadow-size) 100%);
-    height: var(--shadow-size);
-    width: calc(var(--shadow-size) + var(--calculator-width));
+    bottom: calc(var(--calculator-shadow-size) * -1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--calculator-shadow-size) 100%);
+    height: var(--calculator-shadow-size);
+    width: calc(var(--calculator-shadow-size) + var(--calculator-width));
 }
 
 #display {
@@ -64,13 +65,33 @@ body {
     grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
     grid-template-columns: repeat(5, 1fr);
     user-select: none;
+    gap: 2vmin;
     padding: 2vmin;
     justify-items: center;
     align-content: center;
+    position: relative;
 }
 
 .key {
-    padding: 0.5vmin;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.key::before {
+    right: calc(var(--key-shadow-size) * -1);
+    clip-path: polygon(0 0, 100% var(--key-shadow-size), 100% 100%, 0 100%);
+    height: calc(100% + var(--key-shadow-size));
+    width: var(--key-shadow-size);
+}
+
+.key::after {
+    left: 0;
+    bottom: calc(var(--key-shadow-size) * -1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--key-shadow-size) 100%);
+    height: var(--key-shadow-size);
+    width: calc(100% + var(--key-shadow-size));
 }
 
 #backspace {
