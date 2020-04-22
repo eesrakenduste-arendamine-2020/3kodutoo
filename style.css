@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
 :root {
     --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
     /* hsl(271, 50%, 50%) */
@@ -8,8 +10,9 @@
     --tint-black: #111;
     --calculator-shadow-size: 4vmin;
     --key-shadow-size: 1vmin;
+    --display-shadow-size: 1.5vmin;
     --calculator-width: 50vmin;
-    --calculator-height: 65vmin;
+    --calculator-height: 60vmin;
     --button-animation: clip-path 0.1s ease, transform 0.1s ease;
 }
 
@@ -20,6 +23,9 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: var(--tint-black);
     font-size: 5vmin;
     margin: 0;
 }
@@ -31,11 +37,10 @@ body {
     height: var(--calculator-height);
     width: var(--calculator-width);
     align-self: center;
-    grid-area: calculator;
     position: relative;
 }
 
-#container::before, #container::after, .key::before, .key::after {
+#container::before, #container::after, .key::before, .key::after, #display::before, #display::after {
     content: "";
     position: absolute;
     background: var(--tint-black);
@@ -59,6 +64,22 @@ body {
 #display {
     height: 16vh;
     padding: 2vmin;
+    margin: 2vmin;
+    position: relative;
+}
+
+#display::before {
+    left: var(--display-shadow-size);
+    top: var(--display-shadow-size);
+    height: calc(100% - var(--display-shadow-size));
+    width: var(--display-shadow-size);
+}
+
+#display::after {
+    left: var(--display-shadow-size);
+    top: var(--display-shadow-size);
+    height: var(--display-shadow-size);
+    width: calc(100% - var(--display-shadow-size));
 }
 
 #keys {
@@ -120,6 +141,10 @@ body {
 
 #backspace {
     grid-area: backspace;
+}
+
+.key[data-key="0"] {
+    grid-area: auto / 1 / auto / 3;
 }
 
 #equal {
