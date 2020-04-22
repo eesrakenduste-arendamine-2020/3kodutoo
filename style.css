@@ -3,12 +3,14 @@
     /* hsl(271, 50%, 50%) */
     --tint-light: #fbfcff;
     --tint-medium: #dfe1e7;
+    --tint-medium-alpha: #dfe1e744;
     --tint-dark: #333;
     --tint-black: #111;
     --calculator-shadow-size: 4vmin;
     --key-shadow-size: 1vmin;
     --calculator-width: 50vmin;
     --calculator-height: 65vmin;
+    --button-animation: clip-path 0.1s ease, transform 0.1s ease;
 }
 
 body {
@@ -77,6 +79,12 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
+    transition: var(--button-animation);
+}
+
+.key::before, .key::after {
+    transition: var(--button-animation);
+    display: block;
 }
 
 .key::before {
@@ -92,6 +100,22 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, var(--key-shadow-size) 100%);
     height: var(--key-shadow-size);
     width: calc(100% + var(--key-shadow-size));
+}
+
+.key:hover {
+    background-color: var(--tint-medium-alpha);
+}
+
+.key:active {
+    transform: translateX(var(--key-shadow-size)) translateY(var(--key-shadow-size));
+}
+
+.key:active::before {
+    clip-path: polygon(0 0, 0 var(--key-shadow-size), 0 calc(100% - var(--key-shadow-size)), 0 calc(100% - var(--key-shadow-size)));
+}
+
+.key:active::after {
+    clip-path: polygon(0 0, calc(100% - var(--key-shadow-size)) 0, calc(100% - var(--key-shadow-size)) 0, var(--key-shadow-size) 0);
 }
 
 #backspace {
