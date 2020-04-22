@@ -28,6 +28,7 @@ body {
     color: var(--tint-black);
     font-size: 5vmin;
     margin: 0;
+    line-height: 7vmin;
 }
 
 #container {
