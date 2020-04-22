@@ -9,7 +9,7 @@
     --tint-dark: #333;
     --tint-black: #111;
     --calculator-shadow-size: 4vmin;
-    --key-shadow-size: 1vmin;
+    --key-shadow-size: 0.75vmin;
     --display-shadow-size: 1.5vmin;
     --calculator-width: 50vmin;
     --calculator-height: 60vmin;
