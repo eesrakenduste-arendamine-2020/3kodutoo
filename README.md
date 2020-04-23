@@ -4,7 +4,7 @@
 
 Kalkulaatori põhifunktsionaalsuste loomiseks on kasutatud https://www.youtube.com/watch?v=j59qQ7YWLxw õpetusvideot.
 
-Iseseisvalt on kalkulaatorile lisatud öö-ja päevarežiim, lisatud ruutjuure, arvu ruudu ja 10nd logaritmi leimis funktsionaalsus.
+Iseseisvalt on kalkulaatorile lisatud öö-ja päevarežiim, lisatud ruutjuure, arvu ruudu ja 10nd logaritmi leidmis funktsionaalsus.
 
 Rakendus salvestab 25 esimest kasutaja poolt tehtud arvutust lokaalselt.
 
