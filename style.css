@@ -1,50 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 
 :root {
-    --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%)) no-repeat;
-    /* hsl(271, 50%, 50%) */
-    --tint-light: #fbfcff;
-    --tint-medium: #dfe1e7;
-    --tint-medium-alpha: #dfe1e744;
-    --tint-dark: #333;
-    --tint-black: #111;
+    --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%));
+    --calculator-color: #fbfcff;
+    --hover-color: #dfe1e744;
+    --contrast-color: #111;
     --calculator-shadow-size: 4vmin;
     --key-shadow-size: 0.75vmin;
-    --display-shadow-size: 1.5vmin;
+    --display-shadow-size: 0.75vmin;
     --calculator-width: 50vmin;
     --calculator-height: 60vmin;
     --button-animation: clip-path 0.1s ease, transform 0.1s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --contrast-color: hsl(246, 74%, 62%);
+        --calculator-color: hsl(263, 19%, 18%);
+    }
+
+    body {
+        --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(290, 48%, 36%), hsl(209, 39%, 39%));
+    }
+}
+
 body {
     background: var(--primary-color);
-    height: 100vh;
-    overflow: hidden;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    align-content: center;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
-    color: var(--tint-black);
+    color: var(--contrast-color);
     font-size: 5vmin;
-    margin: 0;
+    margin: calc((100vh - var(--calculator-height)) / 2) 0 auto 0;
     line-height: 1.33;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    background-color: var(--tint-light);
+    background: var(--calculator-color);
     height: var(--calculator-height);
     width: var(--calculator-width);
-    align-self: center;
     position: relative;
 }
 
 #container::before, #container::after, .key::before, .key::after, #display::before, #display::after {
     content: "";
     position: absolute;
-    background: var(--tint-black);
+    background: var(--contrast-color);
 }
 
 #container::before {
@@ -88,6 +93,7 @@ body {
     display: grid;
     grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
     grid-template-columns: repeat(5, 1fr);
+    -moz-user-select: none;
     user-select: none;
     gap: 2vmin;
     padding: 2vmin;
@@ -125,7 +131,7 @@ body {
 }
 
 .key:hover {
-    background-color: var(--tint-medium-alpha);
+    background-color: var(--hover-color);
 }
 
 .key:active {
@@ -140,14 +146,6 @@ body {
     clip-path: polygon(0 0, calc(100% - var(--key-shadow-size)) 0, calc(100% - var(--key-shadow-size)) 0, var(--key-shadow-size) 0);
 }
 
-#backspace {
-    grid-area: backspace;
-}
-
 .key[data-key="0"] {
     grid-area: auto / 1 / auto / 3;
-}
-
-#equal {
-    grid-area: equal;
 }
