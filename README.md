@@ -4,7 +4,7 @@ Aluseks on võetud https://codepen.io/simonja2/pen/QbGYbR kalkulaator. Juurde on
 Kalkulaatoril on 4 standard operaatorit(+,-,/,* ), lisaks sellele ka kustutusnupp "back", "pi" nupp, 1/x nupp, mis jagab ühe sisestatud arvuga, % nupp, mis jagab sisestatud arvu sajaga, ning sqrt, mis võtab sisestatud arvu ruutjuure.
 ## Puudused
 Tehted ei saa sisaldada rohkem kui üht operaatorit.
-Kui ajalukku on lisatud palju tehteid, läheb tekst üle ääre.
 
+Kui ajalukku on lisatud palju tehteid, läheb tekst üle ääre.
 ## Ekraanipilt
 ![Ekraanipilt](http://www.tlu.ee/~bb073196/eesrakend2020/kodutoo3/Screenshot%20(1).png)
