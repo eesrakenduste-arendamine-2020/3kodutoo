@@ -1,16 +1,10 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+# 3.kodutoo Kalkulaator - Brendon Brandt
 
-## Tähtaeg 02.05.2020 23:59
+Aluseks on võetud https://codepen.io/simonja2/pen/QbGYbR kalkulaator. Juurde on lisatud siinuste, koossiinuste, tangensite ja logaritmide arvutamine. Kalkulaatoril on ka nupp nimega "day", mille vajutamisel veebisait muutub värvi poolest negatiivseks ning nupu tekst muutub "night"-iks. Selle nupu taasvajutamisel muutub sait jälle värvi pooleks negatiivseks (originaalseks) ning nupu tekst muutub "day"-ks. See töötab kui manuaalse öö ja päevarežiimi lülitina. All on ka tehete ajalugu, selle all nupp "Clear", mis tühjendab kõik, mis ajaloos on.
+Kalkulaatoril on 4 standard operaatorit(+,-,/,* ), lisaks sellele ka kustutusnupp "back", "pi" nupp, 1/x nupp, mis jagab ühe sisestatud arvuga, % nupp, mis jagab sisestatud arvu sajaga, ning sqrt, mis võtab sisestatud arvu ruutjuure.
+## Puudused
+Tehted ei saa sisaldada rohkem kui üht operaatorit.
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
-
-## Nõuded
-
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+Kui ajalukku on lisatud palju tehteid, läheb tekst üle ääre.
+## Ekraanipilt
+![Ekraanipilt](http://www.tlu.ee/~bb073196/eesrakend2020/kodutoo3/Screenshot%20(1).png)

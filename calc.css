@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico|Oxygen);
+
+html {
+  filter: invert(0%);
+}
+
+p {
+  margin: 0;
+  font-family: Pacifico;
+  position: relative;
+  left: 5%;
+  color:white;
+}
+
+.calculator {
+  position: relative;
+  margin: 5% auto;
+  padding: 1em 0;
+  display: block-inline;
+  width: 400px;
+  background-color: gray;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 3px #111;
+  font-family: 'Oxygen';
+}
+
+#history{
+	background-color: lightgray;
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	border-radius: 25px;
+	box-shadow: 2px 2px 1px 1px #222;
+	font-weight:bold;
+	min-height:1.5em;
+	text-align:center;
+}
+
+#clear{
+	margin-left: 40%;
+	margin-right: 40%;	
+	width: 20%;
+	box-shadow: 2px 2px 1px 1px #222;
+	font-weight:bold;
+	border-radius:10px;
+}
+
+.calc-row {
+  text-align: center;
+}
+
+.calc-row div.screen {
+  font-family: Droid Sans Mono;
+  display: table;
+  width: 90%;
+  background-color: #aaa;
+  text-align: right;
+  font-size: 2em;
+  min-height: 2.2em;
+  margin-left: 0.7em;
+  padding-right: 0.5em;
+  border: 1px solid #888;
+  color: #333;
+}
+
+.calc-row div {
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  border: 1px solid #555;
+  background-color: #eee;
+  padding: 10px 0;
+  margin: 7px 5px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px 1px #222;
+  width: 50px;
+}
+
+.calc-row div.zero {
+  width: 112px;
+}
+
+.calc-row div.zero {
+  margin-right: 5px;
+}
