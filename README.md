@@ -5,3 +5,6 @@ Kalkulaatoril on 4 standard operaatorit(+,-,/,* ), lisaks sellele ka kustutusnup
 ## Puudused
 Tehted ei saa sisaldada rohkem kui üht operaatorit.
 Kui ajalukku on lisatud palju tehteid, läheb tekst üle ääre.
+
+## Ekraanipilt
+![Ekraanipilt](http://www.tlu.ee/~bb073196/eesrakend2020/kodutoo3/Screenshot%20(1).png)
