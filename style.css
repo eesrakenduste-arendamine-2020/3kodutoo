@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
 :root {
     --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%));
@@ -11,6 +11,7 @@
     --calculator-width: 50vmin;
     --calculator-height: 60vmin;
     --button-animation: clip-path 0.1s ease, transform 0.1s ease;
+    --switch-animation: transform 0.4s ease;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +30,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Mono', serif;
     font-weight: 400;
     color: var(--contrast-color);
     font-size: 5vmin;
@@ -46,7 +47,7 @@ body {
     position: relative;
 }
 
-#container::before, #container::after, .key::before, .key::after, #display::before, #display::after {
+#container::before, #container::after, #keys > div::before, #keys > div::after, #display::before, #display::after {
     content: "";
     position: absolute;
     background: var(--contrast-color);
@@ -68,10 +69,14 @@ body {
 }
 
 #display {
-    height: 16vh;
-    padding: 2vmin;
+    height: 16vmin;
+    padding: 2vmin 0.5vmin 0.5vmin 2vmin;
     margin: 2vmin;
+    text-align: right;
     position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #display::before {
@@ -88,21 +93,34 @@ body {
     width: calc(100% - var(--display-shadow-size));
 }
 
+#display > * {
+    height: 50%;
+}
+
+#clipping-container {
+    clip: rect(auto, auto, auto, auto);
+    height: calc(var(--calculator-height) - 26.5vmin);
+    width: calc(var(--calculator-width) - 3.5vmin);
+    margin: 2vmin;
+    position: absolute;
+}
+
 #keys {
-    margin: auto 0 0 0;
     display: grid;
-    grid-template-areas: "num num num backspace clear" "num num num multiplication division" "num num num addition subtraction" "num num num equal .";
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(9, 7.5vmin);
     -moz-user-select: none;
     user-select: none;
     gap: 2vmin;
-    padding: 2vmin;
     justify-items: center;
-    align-content: center;
-    position: relative;
+    align-content: flex-start;
+    transition: var(--switch-animation);
 }
 
-.key {
+.switch-tab {
+    transform: translateX(calc(-1 * var(--calculator-width) * 0.75));
+}
+
+#keys > div {
     position: relative;
     height: 100%;
     width: 100%;
@@ -110,19 +128,19 @@ body {
     transition: var(--button-animation);
 }
 
-.key::before, .key::after {
+#keys > div::before, #keys > div::after {
     transition: var(--button-animation);
     display: block;
 }
 
-.key::before {
+#keys > div::before {
     right: calc(var(--key-shadow-size) * -1);
     clip-path: polygon(0 0, 100% var(--key-shadow-size), 100% 100%, 0 100%);
     height: calc(100% + var(--key-shadow-size));
     width: var(--key-shadow-size);
 }
 
-.key::after {
+#keys > div::after {
     left: 0;
     bottom: calc(var(--key-shadow-size) * -1);
     clip-path: polygon(0 0, 100% 0, 100% 100%, var(--key-shadow-size) 100%);
@@ -130,22 +148,30 @@ body {
     width: calc(100% + var(--key-shadow-size));
 }
 
-.key:hover {
+#keys > div:hover {
     background-color: var(--hover-color);
 }
 
-.key:active {
+#keys > div:active {
     transform: translateX(var(--key-shadow-size)) translateY(var(--key-shadow-size));
 }
 
-.key:active::before {
+#keys > div:active::before {
     clip-path: polygon(0 0, 0 var(--key-shadow-size), 0 calc(100% - var(--key-shadow-size)), 0 calc(100% - var(--key-shadow-size)));
 }
 
-.key:active::after {
+#keys > div:active::after {
     clip-path: polygon(0 0, calc(100% - var(--key-shadow-size)) 0, calc(100% - var(--key-shadow-size)) 0, var(--key-shadow-size) 0);
 }
 
-.key[data-key="0"] {
-    grid-area: auto / 1 / auto / 3;
+#keys > div[data-key="0"] {
+    grid-column: 1 / 3;
+}
+
+#keys > div[data-key="sin"], #keys > div[data-key="tan"] {
+    grid-column: 6 / 8;
+}
+
+#keys > div[data-key="cos"], #keys > div[data-key="log"] {
+    grid-column: 8 / 10;
 }
