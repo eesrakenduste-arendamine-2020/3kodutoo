@@ -168,7 +168,7 @@ body {
     grid-column: 1 / 3;
 }
 
-#keys > div[data-key="sin"], #keys > div[data-key="tan"] {
+#keys > div[data-key="sin"], #keys > div[data-key="tan"], #keys > div[data-key="reciprocal"] {
     grid-column: 6 / 8;
 }
 
