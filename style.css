@@ -56,7 +56,6 @@ body {
 #container::before {
     right: calc(var(--calculator-shadow-size) * -1);
     clip-path: polygon(0 0, 100% var(--calculator-shadow-size), 100% 100%, 0 100%);
-    z-index: -1;
     height: calc(var(--calculator-shadow-size) + var(--calculator-height));
     width: var(--calculator-shadow-size);
 }
@@ -117,7 +116,7 @@ body {
 }
 
 .switch-tab {
-    transform: translateX(calc(-1 * var(--calculator-width) * 0.75));
+    transform: translateX(calc(-1 * (var(--calculator-width) - 12vmin)));
 }
 
 #keys > div {
