@@ -26,8 +26,10 @@ window.addEventListener("load", function(){
         numbers += "<br>";
         for(let j = 0; j < buttons[i].length; j++) {
 
-
-            if(isNaN(buttons[i][j])){
+            if(buttons[i][j] === "."){
+                numbers += "<button class=\"key-number\" data-action=\""+buttons[i][j]+"\" onclick='onNumberClick(this)' >"+buttons[i][j]+"</button>";
+            }
+            else if(isNaN(buttons[i][j])){
                 numbers += "<button class=\"key-function\" data-action=\""+buttons[i][j]+"\" onclick='onFunctionClick(this)' >"+buttons[i][j]+"</button>";
             }
             else{
@@ -76,7 +78,12 @@ function onNumberClick(sender){
     console.log("NUMBER");
     let previusContent = document.getElementById("lower_numbers").innerHTML;
     console.log(previusContent);
-    document.getElementById("lower_numbers").innerHTML = previusContent + sender.innerHTML;
+    if(sender.innerHTML !== "."){
+        document.getElementById("lower_numbers").innerHTML = previusContent + sender.innerHTML;
+    }else if(sender.innerHTML === "." && !previusContent.includes(".")){
+        document.getElementById("lower_numbers").innerHTML = previusContent + "."
+    }
+
 }
 
 
