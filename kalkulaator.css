@@ -1,0 +1,19 @@
+.calculator__keys {
+    display: block;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
+    /* other necessary CSS */
+
+}
+
+
+
+.calculator__functions {
+    display: flex;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
+    /* other necessary CSS */
+
+}
