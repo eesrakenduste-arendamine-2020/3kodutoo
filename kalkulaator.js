@@ -13,7 +13,7 @@ window.addEventListener("load", function(){
     let classes = ["key-number", "key-function"];
 
     let buttons = [
-        ["+","-","x","÷"],
+        ["+","-","x","÷","√","-/+"],
         ["1", "2", "3"],
         ["4", "5", "6"],
         ["7", "8", "9"],
@@ -43,34 +43,84 @@ window.addEventListener("load", function(){
 });
 
 function calculateAnswer() {
+    console.log("VASTUS");
     let nr1 = parseFloat(document.getElementById("upper_numbers").innerHTML);
     let nr2 = parseFloat(document.getElementById("lower_numbers").innerHTML);
     let answer;
 
     if(sign === "+") {
+        console.log(nr1 + " + " + nr2);
        answer = nr1 + nr2;
     }
     else if(sign === "-") {
         answer = nr1 - nr2;
+        console.log(nr1 + " - " + nr2);
     }
     else if(sign === "x") {
         answer = nr1 * nr2;
+        console.log(nr1 + " x " + nr2);
     }
     else if(sign === "÷") {
         answer = nr1 / nr2;
+        console.log(nr1 + " / " + nr2);
     }
 
     document.getElementById("upper_numbers").innerHTML = answer.toString();
     document.getElementById("lower_numbers").innerHTML = "";
-    document.getElementById("sign_label").innerHTML = "";
+    //document.getElementById("sign_label").innerHTML = "";
 
 }
 
 function onFunctionClick(sender){
-    document.getElementById("upper_numbers").innerHTML = document.getElementById("lower_numbers").innerHTML;
-    document.getElementById("lower_numbers").innerHTML = "";
-    document.getElementById("sign_label").innerHTML = sender.innerHTML;
-    sign = sender.innerHTML;
+
+    let upperValue = document.getElementById("lower_numbers").innerHTML;
+
+    if(document.getElementById("lower_numbers").innerHTML !== "" && document.getElementById("upper_numbers").innerHTML !== "" && sender.innerHTML !== "-/+"){
+        calculateAnswer();
+        sign = sender.innerHTML;
+        //document.getElementById("upper_numbers").innerHTML = "";
+        document.getElementById("sign_label").innerHTML = sign;
+        console.log("A");
+    }
+    else if(document.getElementById("lower_numbers").innerHTML !== "" && document.getElementById("upper_numbers").innerHTML !== ""){
+
+    }
+    else{
+        console.log("B");
+        sign = sender.innerHTML;
+
+        if(sender.innerHTML === "AC"){
+            document.getElementById("lower_numbers").innerHTML = "";
+            document.getElementById("upper_numbers").innerHTML = "";
+            document.getElementById("sign_label").innerHTML = "";
+        }
+        else if(sender.innerHTML === "√"){
+
+            document.getElementById("upper_numbers").innerHTML = Math.sqrt(parseFloat(upperValue));
+            document.getElementById("lower_numbers").innerHTML = "";
+            document.getElementById("sign_label").innerHTML = "";
+        }
+        else if(sender.innerHTML === "-/+") {
+            console.log(upperValue);
+            document.getElementById("lower_numbers").innerHTML = parseFloat(upperValue) * -1;
+            //document.getElementById("lower_numbers").innerHTML = "";
+        }
+        else if(sender.innerHTML === "=") {
+            calculateAnswer();
+        }
+        else if(document.getElementById("lower_numbers").innerHTML === "" && document.getElementById("upper_numbers").innerHTML !== ""){
+            //document.getElementById("upper_numbers").innerHTML = document.getElementById("lower_numbers").innerHTML;
+            document.getElementById("lower_numbers").innerHTML = "";
+            document.getElementById("sign_label").innerHTML = sender.innerHTML;
+            console.log("SIIN1");
+        }else{
+            console.log("SIIN2");
+            document.getElementById("upper_numbers").innerHTML = document.getElementById("lower_numbers").innerHTML;
+            document.getElementById("lower_numbers").innerHTML = "";
+            document.getElementById("sign_label").innerHTML = sender.innerHTML;
+        }
+    }
+
     console.log("FUNCTION");
 }
 
