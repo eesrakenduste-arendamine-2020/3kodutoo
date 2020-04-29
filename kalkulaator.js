@@ -5,6 +5,7 @@ function isInt(value) {
 }
 
 let sign = "";
+let tempNr;
 
 window.addEventListener("load", function(){
 
@@ -46,6 +47,16 @@ function calculateAnswer() {
     console.log("VASTUS");
     let nr1 = parseFloat(document.getElementById("upper_numbers").innerHTML);
     let nr2 = parseFloat(document.getElementById("lower_numbers").innerHTML);
+
+
+
+    if(isNaN(nr2)){
+        nr2 = tempNr;
+        console.log("null" + tempNr);
+    }else{
+        tempNr = nr2;
+        console.log("tempnr "+ tempNr);
+    }
     let answer;
 
     if(sign === "+") {
