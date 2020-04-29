@@ -1,0 +1,134 @@
+body{
+    background-color: black;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#bar{
+    background-color: white;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 3vw;
+}
+#calculator_box{
+    height: 75vh;
+    width: 35vw;
+    background-color: azure;
+    border-radius: 12px;
+    margin-left: 32.5vw;
+    margin-top: 10vh;
+}
+
+#insert_number{
+    height: 10vh;
+    width: 25vw;
+    border-radius: 12px;
+    border: none;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: 1px solid black;
+    font-size: 4vw;
+}
+
+#number_area{
+    margin-top: 5vh;
+    height: 50vh;
+    width: 25vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.num_container{
+    padding: 0;
+    background-color: black;
+    width: 8vw;
+    height: 8vh;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.num_container:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#theme_button{
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vw;
+    height: 4vh;
+    width: 4vh;   
+    background-color: black;
+    border: 1px solid white ;
+    cursor: pointer;
+    outline:none;
+    border-radius: 7px;
+    
+}
+
+#img_link{
+    position: absolute;
+    top: 0.5vh;
+    right: 4vw;
+    height: 4vh;
+    width: 4vh;   
+    cursor: pointer;
+    outline:none;
+    border-radius: 7px; 
+}
+/*color change*/
+body.changed{
+    background-color: white;
+}
+#theme_button.changed { 
+    background-color: white;
+    border: 1px solid black ;
+    color: white;
+}
+#bar.changed{
+    background-color: black;
+    color: white;
+}
+
+#calculator_box.changed{
+    background-color: black;
+}
+.num_container.changed{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #calculator_box{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #insert_number{
+        width: 90vw;
+        font-size: 9vw;
+    }
+    #number_area{
+        width: 90vw;
+        height: 70vh;
+    }
+    .num_container{
+        width: 30vw;
+        height: 12vh;
+        font-size: 9vw;
+    }
+    #bar{
+        display: none;
+    }
+
+    #theme_button{
+        display: none;
+    }
+
+  }
