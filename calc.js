@@ -56,7 +56,7 @@ class Calculation {
 
         if (operations.hasOwnProperty(this.op)) {
 
-            const result = operations[this.op](Number(this.total) || Number(this.leftValueChain), Number(this.valueChain));
+            const result = round(operations[this.op](Number(this.total) || Number(this.leftValueChain), Number(this.valueChain)));
 
             this.total = result;
             this.renderResult(result);
@@ -133,10 +133,10 @@ class Calculation {
 }
 
 // Lihtne ümardamine
-function round(x, precision = 0.0005) {
-    const y = +x + precision / 2;
+function round(x, precision = 0.001) {
+    const y = x + precision / 2;
 
-    return y - (y % +precision);
+    return y - (y % precision);
 }
 
 const keys = document.getElementById('keys');
