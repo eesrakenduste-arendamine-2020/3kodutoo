@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
+::-webkit-scrollbar {
+    height: 0.75vmin;
+    background: var(--scrollbar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--contrast-color-alt);
+}
+
 :root {
     --primary-color: 0 0 / 25vmin url("noise.png"), linear-gradient(-31deg, hsl(335, 50%, 51%), hsl(46, 60%, 61%));
     --calculator-color: #fbfcff;
+    --scrollbar-color: #dfe1e7;
     --hover-color: #dfe1e744;
     --contrast-color: #111;
+    --contrast-color-alt: #575050;
     --calculator-shadow-size: 4vmin;
     --key-shadow-size: 0.75vmin;
     --display-shadow-size: 0.75vmin;
@@ -16,8 +27,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --calculator-color: hsl(263, 19%, 15%);
         --contrast-color: hsl(246, 74%, 62%);
-        --calculator-color: hsl(263, 19%, 18%);
+        --contrast-color-alt: hsl(246, 74%, 70%);
+        --scrollbar-color: hsl(263, 19%, 24%);
+        --hover-color: #dfe1e711;
     }
 
     body {
@@ -72,11 +86,10 @@ body {
 
 #display {
     height: 16vmin;
-    padding: 2vmin 0.5vmin 0.5vmin 2vmin;
+    padding: 1.5vmin 0 0 1.5vmin;
     margin: 2vmin;
     text-align: right;
     position: relative;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -96,9 +109,17 @@ body {
 }
 
 #display > * {
-    height: 50%;
+    flex: 1 1 50%;
+    margin-top: 1vmin;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+#history {
+    color: var(--contract-color-alt);
+    font-size: 4vmin;
 }
 
 #clipping-container {
