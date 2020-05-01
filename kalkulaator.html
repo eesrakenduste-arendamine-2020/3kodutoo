@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Kalkukaator</title>
+    <link href="night.css" rel="stylesheet" id="currentCss">
+    <link href="toggle.css" rel="stylesheet">
     <link href="kalkulaator.css" rel="stylesheet">
     <script src="kalkulaator.js"></script>
+    <script src="dayNightChanger.js"></script>
 </head>
 <body>
-<div class=”calculator”>
-    <div class=”calculator__display”>0ww</div>
+<div class="calculator">
+    <label class="switch">
+        <input id="daynightbutton" type="checkbox" onclick="changeStyle()">
+        <span class="slider round"></span>
+    </label>
     <div class="calculator__keys">
+        <ul id="history">
 
-        <div id="upper_numbers"></div>
-        <div id="sign_label"></div>
-        <div id="lower_numbers"></div>
+        </ul>
+        <div class ="number-display" id="upper_numbers"></div>
+        <div class ="number-display" id="sign_label"></div>
+        <div class ="number-display" id="lower_numbers"></div>
         <div id="calculator_keys">
 
         </div>
 
-
-        <button onclick="calculateAnswer(this)" class="key-calculate" data-action="calculate">=</button>
     </div>
 </div>
 </body>

@@ -1,11 +1,16 @@
 
 function isInt(value) {
-    var x = parseFloat(value);
+    letx = parseFloat(value);
     return !isNaN(value) && (x | 0) === x;
 }
 
 let sign = "";
 let tempNr;
+
+function displayItemFromHistory(sender){
+    console.log(sender.toString());
+    console.log(sender.innerHTML);
+}
 
 window.addEventListener("load", function(){
 
@@ -14,11 +19,12 @@ window.addEventListener("load", function(){
     let classes = ["key-number", "key-function"];
 
     let buttons = [
-        ["+","-","x","÷","√","-/+"],
-        ["1", "2", "3"],
-        ["4", "5", "6"],
+        ["+","-","x","÷"],
+        ["√","-/+","^","AC"],
         ["7", "8", "9"],
-        ["0", ".", "AC"]
+        ["4", "5", "6"],
+        ["1", "2", "3"],
+        ["0", ".","="]
 
     ];
 
@@ -28,13 +34,16 @@ window.addEventListener("load", function(){
         for(let j = 0; j < buttons[i].length; j++) {
 
             if(buttons[i][j] === "."){
-                numbers += "<button class=\"key-number\" data-action=\""+buttons[i][j]+"\" onclick='onNumberClick(this)' >"+buttons[i][j]+"</button>";
+                numbers += "<button class=\"key-number\" onclick='onNumberClick(this)' >"+buttons[i][j]+"</button>";
+            }
+            else if(buttons[i][j] === "="){
+                numbers += "<button class=\"key-calculate\" onclick='calculateAnswer(this)' >"+buttons[i][j]+"</button>";
             }
             else if(isNaN(buttons[i][j])){
-                numbers += "<button class=\"key-function\" data-action=\""+buttons[i][j]+"\" onclick='onFunctionClick(this)' >"+buttons[i][j]+"</button>";
+                numbers += "<button class=\"key-function\" onclick='onFunctionClick(this)' >"+buttons[i][j]+"</button>";
             }
             else{
-                numbers += "<button class=\"key-number\" data-action=\""+buttons[i][j]+"\" onclick='onNumberClick(this)' >"+buttons[i][j]+"</button>";
+                numbers += "<button class=\"key-number\" onclick='onNumberClick(this)' >"+buttons[i][j]+"</button>";
             }
         }
     }
@@ -59,25 +68,48 @@ function calculateAnswer() {
     }
     let answer;
 
-    if(sign === "+") {
-        console.log(nr1 + " + " + nr2);
-       answer = nr1 + nr2;
-    }
-    else if(sign === "-") {
-        answer = nr1 - nr2;
-        console.log(nr1 + " - " + nr2);
-    }
-    else if(sign === "x") {
-        answer = nr1 * nr2;
-        console.log(nr1 + " x " + nr2);
-    }
-    else if(sign === "÷") {
-        answer = nr1 / nr2;
-        console.log(nr1 + " / " + nr2);
+    switch(document.getElementById("sign_label").innerHTML) {
+        case "+":
+            answer = nr1 + nr2;
+            break;
+        case "-":
+            answer = nr1 - nr2;
+            break;
+        case "x":
+            answer = nr1 * nr2;
+            break;
+        case "÷":
+            answer = nr1 / nr2;
+            break;
+        case "^":
+            answer = nr1 ** nr2;
+            break;
     }
 
     document.getElementById("upper_numbers").innerHTML = answer.toString();
     document.getElementById("lower_numbers").innerHTML = "";
+
+    let historyUL = document.getElementById("history");
+    let historyLI = document.createElement("li");
+    historyLI.addEventListener("click", displayItemFromHistory);
+
+
+
+    console.log(historyUL.childElementCount);
+    console.log(historyUL.firstElementChild);
+    if(historyUL.childElementCount > 3){
+        historyUL.firstElementChild.remove();
+    }
+
+    historyLI.onclick = function () {
+        console.log(this.innerHTML);
+    };
+
+    historyLI.appendChild(document.createTextNode(nr1 + " "+ document.getElementById("sign_label").innerHTML + " " + nr2 + " = " + answer.toString()));
+
+    historyUL.appendChild(historyLI);
+
+
     //document.getElementById("sign_label").innerHTML = "";
 
 }
@@ -86,15 +118,12 @@ function onFunctionClick(sender){
 
     let upperValue = document.getElementById("lower_numbers").innerHTML;
 
-    if(document.getElementById("lower_numbers").innerHTML !== "" && document.getElementById("upper_numbers").innerHTML !== "" && sender.innerHTML !== "-/+"){
+    if(document.getElementById("lower_numbers").innerHTML !== "" && document.getElementById("upper_numbers").innerHTML !== "" && sender.innerHTML !== "-/+" && sender.innerHTML !== "AC"){
         calculateAnswer();
         sign = sender.innerHTML;
         //document.getElementById("upper_numbers").innerHTML = "";
         document.getElementById("sign_label").innerHTML = sign;
         console.log("A");
-    }
-    else if(document.getElementById("lower_numbers").innerHTML !== "" && document.getElementById("upper_numbers").innerHTML !== ""){
-
     }
     else{
         console.log("B");
@@ -113,7 +142,13 @@ function onFunctionClick(sender){
         }
         else if(sender.innerHTML === "-/+") {
             console.log(upperValue);
-            document.getElementById("lower_numbers").innerHTML = parseFloat(upperValue) * -1;
+            console.log(parseFloat(document.getElementById("lower_numbers").innerHTML) * -1);
+            if(document.getElementById("lower_numbers").innerHTML !== ""){
+                document.getElementById("lower_numbers").innerHTML = parseFloat(document.getElementById("lower_numbers").innerHTML) * -1;
+            }else{
+                document.getElementById("upper_numbers").innerHTML = parseFloat(document.getElementById("upper_numbers").innerHTML) * -1;
+            }
+
             //document.getElementById("lower_numbers").innerHTML = "";
         }
         else if(sender.innerHTML === "=") {
@@ -139,6 +174,11 @@ function onNumberClick(sender){
     console.log("NUMBER");
     let previusContent = document.getElementById("lower_numbers").innerHTML;
     console.log(previusContent);
+        /*
+    if(document.getElementById("lower_numbers").innerHTML === ""){
+        document.getElementById("lower_numbers").innerHTML = previusContent + sender.innerHTML;
+    }*/
+
     if(sender.innerHTML !== "."){
         document.getElementById("lower_numbers").innerHTML = previusContent + sender.innerHTML;
     }else if(sender.innerHTML === "." && !previusContent.includes(".")){

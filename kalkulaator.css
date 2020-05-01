@@ -7,6 +7,25 @@
 
 }
 
+.number-display{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    height: 10vh;
+    width: 10vh;
+    font-size: 20pt;
+}
+
+button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 10vh;
+    width: 10vh;
+    font-size: 20pt;
+}
 
 
 .calculator__functions {
