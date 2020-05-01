@@ -83,6 +83,7 @@ function calculateAnswer() {
             break;
         case "^":
             answer = nr1 ** nr2;
+
             break;
     }
 

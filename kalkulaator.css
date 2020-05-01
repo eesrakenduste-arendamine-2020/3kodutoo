@@ -3,7 +3,6 @@
     width: 50%;
     margin-left: 40%;
     margin-top: 10%;
-    /* other necessary CSS */
 
 }
 
@@ -12,9 +11,21 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    height: 10vh;
+    height: 5vh;
     width: 10vh;
     font-size: 20pt;
+    background-color: #ffa32e;
+}
+
+.sign-display{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    height: 5vh;
+    width: 10vh;
+    font-size: 20pt;
+    background-color: #72f3ff;
 }
 
 button {
@@ -27,12 +38,28 @@ button {
     font-size: 20pt;
 }
 
+ul {
+    list-style-type: none;
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
 
 .calculator__functions {
     display: flex;
     width: 50%;
     margin-left: 40%;
     margin-top: 10%;
-    /* other necessary CSS */
 
 }
+
