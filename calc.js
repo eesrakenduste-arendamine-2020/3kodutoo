@@ -160,6 +160,8 @@ function handleKey(dataKey) {
         keys.classList.contains('switch-tab') ? keys.classList.remove('switch-tab') : keys.classList.add('switch-tab');
     } else if (dataKey === 'clear') {
         calc.reset();
+    } else if (isNaN(calc.total)) {
+        return;
     } else if (!isNaN(parseInt(dataKey)) || dataKey === '.') {
         calc.appendValue(dataKey);
     } else if (dataKey === '=') {
