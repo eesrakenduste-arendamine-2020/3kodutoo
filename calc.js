@@ -92,7 +92,7 @@ class Calculation {
     // Laseb käesoleva arvu läbi funktsiooni aga history-sse paneme ta "fn(arv)" formaadis
     executeFunction(fn) {
         if (this.op) {
-            this.history += `${fn}(${this.valueChain})`;
+            this.history = `${fn}(${this.history})`;
         } else {
             if (!this.valueChain) this.valueChain += 0;
             this.history = `${fn}(${this.history || this.valueChain})`;
