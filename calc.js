@@ -63,6 +63,7 @@ class Calculation {
             this.history += this.valueChain;
             this.renderHistory(this.history);
             this.leftValueChain = '';
+            this.op = '';
             this.valueChain = this.total;
         } else {
             throw Error('Unknown operator');
@@ -112,6 +113,10 @@ class Calculation {
         // Me ei lisa punkti uuesti kui see on juba chainis olemas
         if (value === '.' && this.valueChain.includes('.')) {
             return;
+        }
+
+        if (this.valueChain && this.history && !this.op) {
+            this.reset();
         }
 
         if (value.includes('.') && value !== '.') {
