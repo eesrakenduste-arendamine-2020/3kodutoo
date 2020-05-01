@@ -71,7 +71,7 @@ class Calculation {
 
     setOperator(op) {
         if (operations.hasOwnProperty(op)) {
-            if (this.valueChain === '') this.valueChain = '0 ';
+            if (this.valueChain === '') this.valueChain = '0';
             this.op = op;
 
             // Kui history viimane char on operator siis me kirjutame selle üle
@@ -137,16 +137,18 @@ class Calculation {
         this.op = '';
         this.fn = '';
         this.total = 0;
-        this.renderResult('');
+        this.renderResult('0');
         this.renderHistory('');
     }
 }
 
 // Lihtne ümardamine
-function round(x, precision = 0.001) {
-    const y = x + precision / 2;
+// https://stackoverflow.com/a/49729715
+function round(number, precision = 4) {
+    const factor = Math.pow(10, precision);
+    const n = precision < 0 ? number : 0.01 / factor + number;
 
-    return y - (y % precision);
+    return Math.round(n * factor) / factor;
 }
 
 const keys = document.getElementById('keys');
