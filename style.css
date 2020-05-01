@@ -56,6 +56,10 @@
         --key-shadow-size: calc(0.75vmin * 1.33);
         --display-shadow-size: calc(0.75vmin * 1.33);
     }
+
+    #clipping-container {
+        width: calc(var(--calculator-width) - var(--small-unit) * 2);
+    }
 }
 
 body {
@@ -144,9 +148,16 @@ body {
 #clipping-container {
     clip: rect(auto, auto, auto, auto);
     height: calc(var(--calculator-height) * 0.73 - 9.5vmin);
-    width: calc(var(--calculator-width) - var(--big-unit) * 2);
+    width: calc(var(--calculator-width) - var(--small-unit) * 2);
     margin: var(--big-unit);
     position: absolute;
+}
+
+/* Väga, väga kohutav */
+@media (max-width: 1024px), (orientation: portrait) {
+    #clipping-container {
+        width: calc(var(--calculator-width) - var(--big-unit) * 2);
+    }
 }
 
 #keys {
@@ -217,4 +228,11 @@ div[data-key="sin"], div[data-key="tan"] {
 
 div[data-key="cos"], div[data-key="log"] {
     grid-column: 8 / 10;
+}
+
+a {
+    position: absolute;
+    bottom: 1vmin;
+    font-size: calc(var(--font-size) * 0.5);
+    letter-spacing: -0.1vmin;
 }
