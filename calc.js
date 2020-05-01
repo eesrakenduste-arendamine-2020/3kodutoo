@@ -63,6 +63,7 @@ class Calculation {
             this.history += this.valueChain;
             this.renderHistory(this.history);
             this.leftValueChain = '';
+            this.valueChain = this.total;
         } else {
             throw Error('Unknown operator');
         }
@@ -73,7 +74,11 @@ class Calculation {
             if (this.valueChain === '') this.valueChain = '0 ';
             this.op = op;
 
-            // MATCH LAST CHAR OF HISTORY AND CHANGE ACCORDINGLY IF OP IS CHANGED
+            // Kui history viimane char on operator siis me kirjutame selle üle
+            // Ma kujutan ette et see ei ole kõige kiirem viis selle tegemiseks
+            if (operations.hasOwnProperty(this.history.substring(this.history.length - 1))) {
+                this.history = this.history.slice(0, this.history.length - 1);
+            }
             this.history += (this.history === '' ? this.valueChain : '') + op;
 
             this.renderHistory(this.history);
