@@ -64,7 +64,7 @@ body {
     position: relative;
 }
 
-#container::before, #container::after, #keys > div::before, #keys > div::after, #display::before, #display::after {
+#container::before, #container::after, div[data-key]::before, div[data-key]::after, #display::before, #display::after {
     content: "";
     position: absolute;
     background: var(--contrast-color);
@@ -145,7 +145,7 @@ body {
     transform: translateX(calc(-1 * (var(--calculator-width) - 12vmin)));
 }
 
-#keys > div {
+div[data-key] {
     position: relative;
     height: 100%;
     width: 100%;
@@ -153,19 +153,19 @@ body {
     transition: var(--button-animation);
 }
 
-#keys > div::before, #keys > div::after {
+div[data-key]::before, div[data-key]::after {
     transition: var(--button-animation);
     display: block;
 }
 
-#keys > div::before {
+div[data-key]::before {
     right: calc(var(--key-shadow-size) * -1);
     clip-path: polygon(0 0, 100% var(--key-shadow-size), 100% 100%, 0 100%);
     height: calc(100% + var(--key-shadow-size));
     width: var(--key-shadow-size);
 }
 
-#keys > div::after {
+div[data-key]::after {
     left: 0;
     bottom: calc(var(--key-shadow-size) * -1);
     clip-path: polygon(0 0, 100% 0, 100% 100%, var(--key-shadow-size) 100%);
@@ -173,30 +173,30 @@ body {
     width: calc(100% + var(--key-shadow-size));
 }
 
-#keys > div:hover {
+div[data-key]:hover {
     background-color: var(--hover-color);
 }
 
-#keys > div:active {
+div[data-key]:active {
     transform: translate(var(--key-shadow-size), var(--key-shadow-size));
 }
 
-#keys > div:active::before {
+div[data-key]:active::before {
     clip-path: polygon(0 0, 0 var(--key-shadow-size), 0 calc(100% - var(--key-shadow-size)), 0 calc(100% - var(--key-shadow-size)));
 }
 
-#keys > div:active::after {
+div[data-key]:active::after {
     clip-path: polygon(0 0, calc(100% - var(--key-shadow-size)) 0, calc(100% - var(--key-shadow-size)) 0, var(--key-shadow-size) 0);
 }
 
-#keys > div[data-key="0"] {
+div[data-key="0"] {
     grid-column: 1 / 3;
 }
 
-#keys > div[data-key="sin"], #keys > div[data-key="tan"] {
+div[data-key="sin"], div[data-key="tan"] {
     grid-column: 6 / 8;
 }
 
-#keys > div[data-key="cos"], #keys > div[data-key="log"] {
+div[data-key="cos"], div[data-key="log"] {
     grid-column: 8 / 10;
 }
