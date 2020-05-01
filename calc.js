@@ -114,7 +114,12 @@ class Calculation {
             return;
         }
 
-        this.valueChain += value;
+        if (value.includes('.') && value !== '.') {
+            this.valueChain = value;
+        } else {
+            this.valueChain += value;
+        }
+
         this.renderResult(this.valueChain);
     }
 
