@@ -48,7 +48,7 @@ class Calculation {
         this.leftValueChain = '';
         this.history = '';
         this.op = '';
-        this.total = 0;
+        this.total = '';
     }
 
     solve() {
