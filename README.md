@@ -13,3 +13,5 @@ Ise lisatud funtsionaalsused:
 - Sulgude lisamise funktsioon. Esimene kord lisab "(", teine kord ")" 
 - Saab arvu ruutu ja kuupi võtta.
 - Euleri numbri ja pi lisamise funktsioonid.
+
+Rakendust saab kasutada: http://www.tlu.ee/~shrimp/javascript%202/Calculator/calc.html
