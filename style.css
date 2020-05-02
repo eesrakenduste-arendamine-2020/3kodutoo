@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2;
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    background: #607d87;
+}
+
+.display {
+    width: 264px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 80vh;
+    align-content: center;
+}
+
+.bg-day{
+    height: 100%;
+    background: linear-gradient(#e91e63, #3f51b5);
+}
+
+.bg-night{
+    height: 100%;
+    background-image: url("spooky.jpg");
+    padding: 0;
+    display: grid;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+
+.music {
+    width: 150px;
+    height: 35px;
+    font-size: 25px;
+    margin: 2;
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    background: #ac4993;
+    position: absolute;
+    left: 44%;
+    top: 0%;
+}
+
+.history-elements{   
+    color: aliceblue;
+}
+.calculator-history{
+    color: aliceblue;    
+}
