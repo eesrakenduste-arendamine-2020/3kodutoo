@@ -14,3 +14,11 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 1. Autori ees- ja perenimi on lehel välja toodud
 1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Kalkulaator suudab liita, lahutada, korrutada, jagada, ruutu võtta, ruutjuurt võtta ning näitab ka murde. Olemas on olemas ka koht, kus ta näitab sessioonis tehtud tehteid, pärast veebilehe uuendamist kaovad eelnevalt tehtud tehted ka ära.
+
+Lisatud on ka pildid päevarežiimist, öörežiimist ning tehete ajaloo näitamisest.
+
+Kasutatud õpetus oli: https://www.youtube.com/watch?v=CI2GwL--ll8
