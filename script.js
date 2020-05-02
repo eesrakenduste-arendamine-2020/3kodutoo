@@ -120,6 +120,8 @@ function checkDecimal(num){
     }
 }
 
+console.log("Raimo töö")
+
 var number = document.getElementsByClassName("number");
 for(var i = 0; i < number.length; i++){
     number[i].addEventListener("click", function(){
