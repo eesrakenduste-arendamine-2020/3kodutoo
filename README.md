@@ -31,7 +31,7 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 
 DETAILSEM SELGITUS:
 
-[](Capture.JPG)
+[](/Capture.JPG)
 
 
 
