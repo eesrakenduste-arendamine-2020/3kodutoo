@@ -56,11 +56,13 @@ $("#bg").click(function () {
   if (isOdd(timesClickedbg)) {
     this.value = "Vaheta öörežiimi peale";
     document.body.style.background = "linear-gradient(to right, green, blue)";
+    document.getElementById("historyValue").style.color = "black";
+    document.getElementById("nameTag").style.color = "black";
   } else {
     document.body.style.background =
       "linear-gradient(to right, black, rgb(34,34,34))";
     document.getElementById("historyValue").style.color = "white";
-    ocument.getElementById("nameTag").style.color = "white";
+    document.getElementById("nameTag").style.color = "white";
     this.value = "Vaheta päevarežiimi peale";
   }
 });
