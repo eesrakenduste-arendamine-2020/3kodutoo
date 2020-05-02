@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body id="main-body">
+
+<nav class="nav-bar">
+    <div class="brand-title">Calculator - Mihkel Joll</div>
+    <div class="navbar-links">
+        <ul>
+            <li>
+                <a href="#">Github link for project</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="calculator-grid-hidden" id="secretButtons">
+    <button data-operation>abs</button>
+    <button data-operation>log</button>
+    <button data-operation>log10</button>
+    <button data-operation>log2</button>
+    <button data-operation>cos</button>
+</div>
+<div class="top">
+
+    <div class="calculator-grid">
+        <div class="output">
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand></div>
+        </div>
+
+        <button class="span-two" data-all-clear>AC</button>
+        <button data-clear>DEL</button>
+        <button data-operation>÷</button>
+        <button data-operation>*</button>
+
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>Round</button>
+        <button data-operation>Power 2</button>
+
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-operation>-</button>
+
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>sqrt</button>
+        <button id="date-time" onclick="dateTimeDisplay()">Dark</button>
+
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button class="span-two" data-equals>=</button>
+        <button onclick="hideButtons()">Secret</button>
+    </div>
+</div>
+<div class="calculator-history" id="history">
+</div>
+</body>
+</html>
