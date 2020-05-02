@@ -2,6 +2,7 @@ class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement;
     this.currentOperandTextElement = currentOperandTextElement;
+    this.history = JSON.parse(sessionStorage.getItem("computation")) || [];
     this.clear();
   }
 
@@ -50,7 +51,7 @@ class Calculator {
       case "%":
         computation = prev / 100;
         break;
-      case "x2":
+      case "x²":
         computation = Math.pow(prev, 2);
         break;
       case "√":
@@ -62,6 +63,7 @@ class Calculator {
     this.currentOperand = computation;
     this.operation = undefined;
     this.previousOperand = "";
+    this.saveResult();
   }
 
   getDisplayNumber(number) {
@@ -97,11 +99,20 @@ class Calculator {
   }
 
   darkMode(counter) {
-    if (counter % 2 == 0) {
+    if (counter % 2 != 0) {
       cssheet.setAttribute("href", "dark.css");
     } else {
       cssheet.setAttribute("href", "light.css");
     }
+  }
+  saveResult() {
+    //Teenu tulemusest objekti, kuhu salvetan mängijanime ja aja.
+    let result = {
+      computation: this.computation,
+    };
+
+    this.history.push(result); //panen tulemuse massiivi
+    sessionStorage.setItem("value", JSON.stringify(this.history)); //salvestan tulemused localStorage'isse.
   }
 }
 const cssheet = document.getElementById("cssheet");

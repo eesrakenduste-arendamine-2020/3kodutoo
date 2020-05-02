@@ -38,6 +38,9 @@ body {
   outline: none;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 25px;
 }
 
 .calculator-grid > button:hover {
@@ -61,6 +64,7 @@ body {
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid white;
+  border-radius: 35px;
 }
 
 .output .previous-operand {
