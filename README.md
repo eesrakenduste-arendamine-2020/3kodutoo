@@ -14,3 +14,12 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 1. Autori ees- ja perenimi on lehel välja toodud
 1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+
+
+# Video abi
+kasutasin abi sellelt lehelt:https://www.youtube.com/watch?v=JDiurjhpOXA
+# Kasutus
+Lehel on kalkulaator,mis töötab, kus on võimalik panna day and night versioon. Tagataustaks tuleb vastavalt muusika, mis versioon hetkel aktiivne on. Kalkulaatori all näitab ka ajalugu.
+
+Autor: Gevin Genro Paas
+link: http://www.tlu.ee/~ggpaas/Eesrakendused/Homework3/calc.html

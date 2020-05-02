@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="calc.js"></script>
+    <title>Kalkulaator</title>
+</head>
+
+<body id="main-body">
+<audio id="myMusic" loop="loop">
+    <source id="creepysong" src="creepy.mp3" type="audio/mp3">
+</audio>
+<audio id="music" loop="loop">
+    <source id="ketsupsong" src="Las.mp3" type="audio/mp3">
+</audio>
+<div class="bg-day" id="back-grnd">
+    <div id="NightMode">
+        <input class="music" id="night" type="button" value="Night Mode"/>
+    </div>
+    <div class="main">
+        <form name="myform">
+            <input class="display" name="display">
+            <br>
+            <input class="button" name="btnsin" onclick="sin()" type="button" value="sin">
+            <input class="button" name="btncos" onclick="cos()" type="button" value="cos">
+            <input class="button" name="btntan" onclick="tan()" type="button" value="tan">
+            <input class="button" name="btnruut" onclick="square()" type="button" value="^2">
+            <input class="button" name="btnrj" onclick="squarert()" type="button" value="√">
+            <br>
+            <input class="button" name="btn7" onclick="myclick('7')" type="button" value="7">
+            <input class="button" name="btn8" onclick="myclick('8')" type="button" value="8">
+            <input class="button" name="btn9" onclick="myclick('9')" type="button" value="9">
+            <input class="button" name="btnkor" onclick="myclick('*')" type="button" value="x">
+            <input class="button" name="btnDEL" onclick="backspace()" type="button" value="DEL">
+            <br>
+            <input class="button" name="btn4" onclick="myclick('4')" type="button" value="4">
+            <input class="button" name="btn5" onclick="myclick('5')" type="button" value="5">
+            <input class="button" name="btn6" onclick="myclick('6')" type="button" value="6">
+            <input class="button" name="btnjag" onclick="myclick('/')" type="button" value="/">
+            <input class="button" name="btnAC" onclick="ac()" type="button" value="AC">
+            <br>
+            <input class="button" name="btn1" onclick="myclick('1')" type="button" value="1">
+            <input class="button" name="btn2" onclick="myclick('2')" type="button" value="2">
+            <input class="button" name="btn3" onclick="myclick('3')" type="button" value="3">
+            <input class="button" name="btnlah" onclick="myclick('-')" type="button" value="-">
+            <input class="button" name="btnplu" onclick="myclick('+')" type="button" value="+">
+            <br>
+            <input class="button" name="btn00" onclick="myclick('00')" type="button" value="00">
+            <input class="button" name="btn0" onclick="myclick('0')" type="button" value="0">
+            <input class="button" name="btnkom" onclick="myclick('.')" type="button" value=",">
+            <input class="button" name="btnabs" onclick="abs()" type="button" value="| |">
+            <input class="button" name="btnvõr" onclick="equal()" type="button" value="=">
+
+            <div class="calculator-history" id="history">
+                HISTORY:
+            </div>
+
+            <div id="name">
+                Gevin Genro Paas
+                <p><a href="https://github.com/ggpaas/3kodutoo">
+                    repo</a>.</p>
+            </div>
+    </div>
+</div>
+
+</body>
