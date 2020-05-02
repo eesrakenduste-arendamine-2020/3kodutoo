@@ -14,3 +14,8 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 1. Autori ees- ja perenimi on lehel välja toodud
 1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+
+
+Autor: Klaus Erik Kruus
+
+Ekraanipilt: https://github.com/klauskruus/3kodutoo/blob/master/Ekraanipilt.png
