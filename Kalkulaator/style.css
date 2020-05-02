@@ -44,3 +44,14 @@ input[type="button"]:hover {
 #repolink {
   padding: 5px;
 }
+
+#nameTag {
+  padding: 5px;
+}
+
+#historyValue {
+  padding: 5px;
+  height: 20px;
+  font-size: 15px;
+  color: black;
+}

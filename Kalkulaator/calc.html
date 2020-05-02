@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script defer src="script.js"></script>
-    <title>Document</title>
+    <title>Kalkulaator</title>
 </head>
 <body>
     <div class="main">
+       
         <form name="form">
-            <input class="textview" name="textview">
+            <input class="textview" name="textview" id="textview">
         </form>
+    
         <table>
             <tr>
                 <td><input class="button" type="button" value="C" onclick="clearAll()"></td>
@@ -59,7 +61,14 @@
   <a href="https://github.com/HenryPajuri/3kodutoo"
     >Link minu repositooriumile
   </a>
-  <p>Henry Pajuri kodutöö</p>
 </div>
+<p>
+    <span id="nameTag">Henry Pajuri kodutöö</span>
+    </p>
+<div id="history">
+    <p id="historyValue">Siin näete enda eelnevaid arvutusi:</p>
+</div>
+
+
 </body>
 </html>

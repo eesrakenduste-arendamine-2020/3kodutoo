@@ -6,15 +6,19 @@ function equal() {
   var exp = document.form.textview.value;
   if (exp) {
     document.form.textview.value = eval(exp);
+    var p = document.createElement("p");
+    p.innerHTML = exp;
+    historyValue.appendChild(p);
+    p.append(" = ", eval(exp));
   }
 }
 
-function squared(){
+function squared() {
   var exp = document.form.textview.value;
   document.form.textview.value = exp * exp;
 }
 
-function cubed(){
+function cubed() {
   var exp = document.form.textview.value;
   document.form.textview.value = exp * exp * exp;
 }
@@ -35,7 +39,7 @@ function isOdd(num) {
 
 var timesClickedBraces = 0;
 
-$("#braces").click(function() {
+$("#braces").click(function () {
   timesClickedBraces++;
 
   if (isOdd(timesClickedBraces)) {
@@ -47,21 +51,24 @@ $("#braces").click(function() {
 
 var timesClickedbg = 1;
 
-$("#bg").click(function() {
+$("#bg").click(function () {
   timesClickedbg++;
   if (isOdd(timesClickedbg)) {
-    this.value="Vaheta öörežiimi peale"
+    this.value = "Vaheta öörežiimi peale";
     document.body.style.background = "linear-gradient(to right, green, blue)";
   } else {
-    document.body.style.background = "linear-gradient(to right, black, rgb(34,34,34))";
-    this.value="Vaheta päevarežiimi peale"
+    document.body.style.background =
+      "linear-gradient(to right, black, rgb(34,34,34))";
+    document.getElementById("historyValue").style.color = "white";
+    ocument.getElementById("nameTag").style.color = "white";
+    this.value = "Vaheta päevarežiimi peale";
   }
 });
 
-var input = document.getElementByName("textview");
-input.addEventListener("keyup", function(event) {
+var input = document.getElementById("textview");
+input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("eqbtn").click();
+    event.preventDefault();
+    document.getElementById("eqbtn").click();
   }
 });
