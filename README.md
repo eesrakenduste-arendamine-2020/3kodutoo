@@ -19,3 +19,6 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 Autor: Klaus Erik Kruus
 
 Ekraanipilt: https://github.com/klauskruus/3kodutoo/blob/master/Ekraanipilt.png
+
+Tegin greeny kaudu, seega link ilmselt ei tööta, kuid selle järgi on kergem otsida.
+http://localhost:5555/~klauskru/Eesrakenduste_arendamine/Kodut%c3%b6%c3%b6_3/teine/kalkulaator.html
