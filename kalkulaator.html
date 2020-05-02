@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkukaator</title>
+    <link href="day.css" rel="stylesheet" id="currentCss">
+    <link href="toggle.css" rel="stylesheet">
+    <link href="kalkulaator.css" rel="stylesheet">
+    <script src="kalkulaator.js"></script>
+    <script src="dayNightChanger.js"></script>
+</head>
+<body>
+<h1>Andreas Kuuskaru</h1>
+<a href="https://github.com/andrkuu/3kodutoo">Repositoorium</a>
+<br>
+<br>
+<div class="calculator">
+    <p>Päev/Öö</p>
+    <label class="switch">
+        <input id="daynightbutton" type="checkbox" onclick="changeStyle()">
+        <span class="slider round"></span>
+    </label>
+    <div class="calculator__keys">
+        <ul id="history" class="history">
+
+        </ul>
+        <div class ="number-display" id="upper_numbers"></div>
+        <div class ="sign-display" id="sign_label"></div>
+        <div class ="number-display" id="lower_numbers"></div>
+        <div id="calculator_keys">
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
