@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="calculator.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulaator</title>
+
+    
+  </head>
+  <body>
+    <div class="kalkulaator"> 
+  <table width="80%" align="center" border: 1px solid black;>
+   
+       <tr>
+       <td>
+        <div class="calculator-grid">
+                <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+                </div>
+            <button data-operation class="span-two cal_tumehall">x²</button>
+            <button data-operation class="span-two cal_tumehall">√</button>
+            <button data-operation class="cal_oranz">*</button>
+            <button data-operation class="cal_tumehall">x³</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation class="cal_oranz">÷</button>
+            <button data-operation class="cal_tumehall">∛</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation class="cal_oranz">-</button>
+            <button data-delete class="cal_tumehall">←</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation class="cal_oranz">+</button>
+            <button data-all-clear class="cal_oranz">C</button>
+            <button data-number class="span-two">0</button>
+            <button data-number>.</button>
+            <button data-equals class="cal_oranz">=</button>
+        </div>
+      </td>
+      <td>
+        <div class="ajalugu"> 
+            <div class="output">Mis siin sees on ?
+            <div data-current-operand class="previous-operand"></div>
+            </div>
+        </div>
+      </td>
+    </tr> 
+    
+  </table>
+</div>
+<script type="text/javascript">
+    var currentTime = new Date().getHours();
+    if (7 <= currentTime && currentTime < 22) {
+      if (document.body) {
+        document.body.className = "valge";
+      }
+    } else {
+      if (document.body) {
+        document.body.className = "pime";
+      }
+    }
+  </script>
+  </body>
+  </html>
