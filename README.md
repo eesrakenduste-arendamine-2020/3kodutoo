@@ -28,7 +28,7 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 
 6.Lisatud enda nimi kodutööle.
 
-
+LINK loodud lehele :http://www.tlu.ee/~hp355837/Kodutoo_3/ 
 DETAILSEM SELGITUS:
 ![](Pics/Capture.JPG)
 
