@@ -31,7 +31,7 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 
 DETAILSEM SELGITUS:
 
-[](https://github.com/hp355837/3kodutoo/blob/master/Capture.JPG)
+![](Pics/Opera Snapshot_2020-05-03_004117_www.tlu.ee.png)
 
 
 
