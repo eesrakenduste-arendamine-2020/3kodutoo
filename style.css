@@ -1,0 +1,98 @@
+.cal_oranz {
+  background-color: #fd9e2b !important;
+  color:white;
+  position: relative;
+}
+.cal_tumehall {
+    background-color: #6b6a67 !important;
+    color:white;
+    position: relative;
+  }
+
+.cal_punane {
+  background-color: #f12821 !important;
+  position: relative;
+}
+
+
+.pime {
+        background-image: url("MN.jpg");
+        background-size: cover;
+    
+      }
+     
+.valge {
+        background-image: url("MD.jpg");
+        background-size: cover;
+    
+      }
+body {  
+    
+  }
+
+
+.ajalugu  {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: minmax(120px, auto) repeat(2, 250px);
+  }
+
+
+.kalkulaator{
+
+   
+    
+   
+}
+
+  
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #5c5a58;
+    outline: none;
+    background-color: rgb(146, 140, 140);
+    color:rgb(44, 43, 43);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(160, 163, 168, 0.9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgb(92, 90, 90);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
