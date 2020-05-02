@@ -1,16 +1,17 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+![Näidis](Kalkulaator1.JPG)
+# 3kodutoo Henry Pajuri
 
-## Tähtaeg 02.05.2020 23:59
+3. kodutöö Eesrakenduste arendamises. Tegemist on küllatki lihtsa ning kergesti arusaadava rakendusega.
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
+Kodutöö tegemiseks kasutasin õpetust: https://www.youtube.com/watch?v=JDiurjhpOXA
 
-## Nõuded
+Ise lisatud funtsionaalsused:
 
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+- Võimalus vahetada öörežiimi ja päevarežiimi vahel. (Muutub ka vastavalt teksti värv)
+- Vasakul võimalik näha eelmisi arvutusi sama sessiooni jooksul.
+- mod nupuga on võimalik jagada jäägiga.
+- Sulgude lisamise funktsioon. Esimene kord lisab "(", teine kord ")" 
+- Saab arvu ruutu ja kuupi võtta.
+- Euleri numbri ja pi lisamise funktsioonid.
+
+Rakendust saab kasutada: http://www.tlu.ee/~shrimp/javascript%202/Calculator/calc.html
