@@ -1,9 +1,9 @@
 .calculator__keys {
     display: block;
-    width: 50%;
-    margin-left: 40%;
-    margin-top: 10%;
-
+    width: 50vh;
+    right: 50%;
+    top: 5%;
+    position: absolute;
 }
 
 .number-display{
@@ -11,8 +11,8 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    height: 5vh;
-    width: 10vh;
+    height: 2vh;
+    width: 50vh;
     font-size: 20pt;
     background-color: #ffa32e;
 }
@@ -22,8 +22,8 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    height: 5vh;
-    width: 10vh;
+    height: 2vh;
+    width: 50vh;
     font-size: 20pt;
     background-color: #72f3ff;
 }
@@ -42,6 +42,10 @@ ul {
     list-style-type: none;
     background: #3399ff;
     padding: 20px;
+    position: absolute;
+    width: 50vh;
+    left: 70vh;
+    top: 5%;
 }
 
 ol li {
