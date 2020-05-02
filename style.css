@@ -1,0 +1,169 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    margin: 0; 
+    
+}
+
+#all-history{
+    background-color: #3a3a3a;
+    top: 10%;
+    position: absolute;
+    right: 10%;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    border-width: 0;
+    overflow: auto;
+    scrollbar-shadow-color: #3a3a3a;
+    scrollbar-highlight-color: #f1b1b1;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.2), inset 1px 1px 20px rgba(0,0,0,0.19);
+    float: right;
+}
+
+#historytext{
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    line-height: 1.6;
+    
+}
+
+.Daymode #historytext{
+    color: black;
+}
+
+.Daymode #repo{
+    background-color: white; 
+    color: black;  
+}
+
+.Daymode #nightDay{
+    background-color: white;   
+    color: black;
+}
+
+.Daymode{
+    background-color: white;
+}
+
+.Daymode #all-history{
+    background-color: white;
+    color: black;
+}
+
+.Daymode #calc{
+    background-color: white;
+}
+
+.Daymode #output{
+    color: black;
+}
+
+#container{
+    width: 95vw;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(sky1.jpg);
+    background-position: center;
+    margin: 20px auto; 
+}
+
+#calc{
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    margin-left: -173px;
+    margin-right: -277.5px;
+    width: 346px;
+    height: 555px;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.2), inset 1px 1px 20px rgba(0,0,0,0.19);
+}
+
+#repo, #nightDay{   
+    margin: 10px;
+    display: block;
+    padding: 10px; 
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    height: 35px;
+    cursor: pointer;
+    background-color: #3a3a3a;
+    box-shadow: inset 1px 1px 20px rgba(0,0,0,0.2), inset 1px 1px 20px rgba(0,0,0,0.19);
+}
+
+#info{
+    float: left;
+    height: 35px;   
+}
+#repo:focus, #nightDay:focus{
+    outline: 0;
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#keyboard{
+    height: 420px;
+    width: 350px;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.operator, .number{
+    width: 52px;
+    height: 51px;
+    margin: 16px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+}
+
+.number{
+    background-color: white;
+}
+.empty{
+    background-color: #3a3a3a;
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-weight: bolder;
+}
+
+.operator:focus, .number:focus{
+    outline: 0;
+}
+
+#square, #root, #cube, button:nth-child(4), button:nth-child(8), button:nth-child(12), button:nth-child(16){
+    font-size: 17px;
+    background-color: #adcae6;
+    cursor: pointer;
+}
+
+#clear, #backspace, button:nth-child(20){
+    font-size: 15px;
+    background-color: #f1b1b1;
+    cursor: pointer;
+}

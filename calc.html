@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="calc.js"></script>
+    <script>
+        function changeColor(){
+            var body = document.body;
+            var calculator = document.querySelector('#calc');
+            var outPut = document.querySelector("#output");
+            var allHist = document.querySelector('#all-history');
+            var repobutton = document.querySelector('#repo');
+            var colorbutton = document.querySelector('#nightDay');
+            if(document.getElementById("nightDay").innerHTML == "Daymode"){
+                body.classList.add("Daymode");
+                calculator.classList.add("Daymode");
+                outPut.classList.add("Daymode");
+                allHist.classList.add("Daymode");
+                repobutton.classList.add("Daymode");
+                colorbutton.classList.add("Daymode");
+                document.getElementById("nightDay").innerHTML = "Nightmode";
+            } else {
+                body.classList.remove("Daymode");
+                calculator.classList.remove("Daymode");
+                outPut.classList.remove("Daymode");
+                allHist.classList.remove("Daymode");
+                repobutton.classList.remove("Daymode");
+                colorbutton.classList.remove("Daymode");
+                document.getElementById("nightDay").innerHTML = "Daymode";
+            }
+            
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="info">
+            <button id="repo">Anete Vaalu repo</button>
+            <button id="nightDay" onclick="changeColor()">Daymode</button>
+        </div>
+        <div id="calc">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" id="clear">C</button>
+				<button class="operator" id="backspace">CE</button>
+				<button class="operator" id="root">&#8730;</button>
+				<button class="operator" id="/">&#247;</button>
+				<button class="number" id="7">7</button>
+				<button class="number" id="8">8</button>
+				<button class="number" id="9">9</button>
+				<button class="operator" id="*">&times;</button>
+				<button class="number" id="4">4</button>
+				<button class="number" id="5">5</button>
+				<button class="number" id="6">6</button>
+				<button class="operator" id="-">-</button>
+				<button class="number" id="1">1</button>
+				<button class="number" id="2">2</button>
+				<button class="number" id="3">3</button>
+				<button class="operator" id="+">+</button>
+				<button class="operator" id="square">x²</button>
+				<button class="number" id="0">0</button>
+				<button class="operator" id="cube">x³</button>
+				<button class="operator" id="=">=</button>
+            </div>
+        </div>
+        <div id="all-history">
+                <p id="historytext"></p>
+        </div>
+    </div>
+ 
+    
+</body>
+</html>
