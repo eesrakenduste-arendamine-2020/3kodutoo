@@ -11,3 +11,5 @@ Juurde lisatud kalkuleerimisfunktsioonid:
 
 Võimalik on vahetada öö- ja päeva režiimi vahel.
 Lisatud link repositooriumi juurde.
+
+![Lehe pilt](pilt.png)
