@@ -7,7 +7,7 @@ Video õppe kalkulaatoris oli tava aritmeetika, jagamine, korrutamin ja punkti l
 
 Iseseisvalt olen kirjutan koodi ja võtsin vaid aluseks numbrite paigutust ja esmase funktsiooni, et onclick nuppud lööksid andmed sisse.
 Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css kujunduse.
-
+##
 1.Lisatud kalkulaatorile minu poolt.
 Öö- ja päevarežiim kujundus funktsioon - muudab lehe värvid vastavalt endale tahtele kas heledaks või tumedamaks.
 
@@ -27,8 +27,9 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 5.Lisatud REPO link githubi.
 
 6.Lisatud enda nimi kodutööle.
-
+##
 LINK loodud lehele :http://www.tlu.ee/~hp355837/Kodutoo_3/ 
+##
 DETAILSEM SELGITUS:
 ![](Pics/Capture.JPG)
 
@@ -39,6 +40,7 @@ Alumine lahter on "Whats your next move?" ehk kuhu kasutaja sisetab enda andmed.
 
 Kalkulaator töötab vaid nuppudu vajutustega ehk muudpidi ei saa sisestada teksti.
 Nuppude all asub lahter ajaloost mis näitab kasutaja viimased arvutused. 
+##
 ![](Pics/Capture2.JPG)
 Funktsionaalsuse poole pealt leht toimib hästi mobiil lehena ka. Lehe funktsionaalsuse nuppud Tan Sin Cos x ruudus, , ruutjuur ja logaritm toimivad koheselt ehk kasutaja sisestatud andmed on kohe arvuatud. ülejäänud nuppud toimuvad tava sisestusega kuni kasutaja vajutab "=" võrdus märki. 
 
