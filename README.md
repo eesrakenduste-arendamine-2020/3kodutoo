@@ -1,16 +1,7 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+Funktsionaalsus: Kalkulaatoril on liitmine, lahutamine, korrutamine, jagamine, ruutu võtmine, ruutjuure võtmine ning 1/x.
 
-## Tähtaeg 02.05.2020 23:59
+Samuti näitab ta tehteid mis on sessiooni jooksul tehtud ning on olemas nupp repositooriumile ja öö/päev versioonile.
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
-
-## Nõuded
-
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+Õpetuseks kasutasin: https://www.youtube.com/watch?v=CI2GwL--ll8
+![Screenshot](img.jpg)
+Autor: Sandra Maidla

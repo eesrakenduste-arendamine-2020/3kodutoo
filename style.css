@@ -1,0 +1,125 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("bg.jpg");
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: silver;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 0 black;
+}
+
+#previousHistory{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(74, 133, 141);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0 black;
+    overflow: auto;
+}
+
+#text{
+    color: rgb(236, 244, 252, 0.7);
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+#result{
+    height: 120px;
+}
+
+#keyboard{
+    height: 400px;
+}
+
+#changeTheme{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#night, #repo{
+    color: silver;
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(53, 51, 48);
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 15px;
+    font-size: 15px;
+    color: darkslategray;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+.operator, .number{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 30%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.number{
+    background-color:silver;
+}
+
+button:focus{
+    outline:0;
+}
+
+button:nth-child(4), button:nth-child(8), button:nth-child(12), button:nth-child(16){
+    background-color: rgb(127, 148, 187);
+}
+
+#clear, #backspace, button:nth-child(20){
+    background-color: rgb(180, 181, 184);
+}
+
+#empty{
+    background-color: silver;
+}
+
+.operator:active, .number:active{
+    font-size: 10px;
+}
+
+#night:active, #square:active, #repo:active{
+    font-size: 10px;
+}
+
+#square, #division, #squareroot{
+    background-color:rosybrown;
+}
