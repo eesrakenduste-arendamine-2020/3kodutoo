@@ -30,7 +30,7 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 
 
 DETAILSEM SELGITUS:
-![](Pics/Capture2.JPG)
+![](Pics/Capture.JPG)
 
 Lehel on vasakus nurgas lisatud kasutaja + repo nupp mis viip repositooriumile ning "Turn on Night/Day mode" mis on öö või päeva värvidega vahetus funktsioon. 
 
@@ -39,7 +39,7 @@ Alumine lahter on "Whats your next move?" ehk kuhu kasutaja sisetab enda andmed.
 
 Kalkulaator töötab vaid nuppudu vajutustega ehk muudpidi ei saa sisestada teksti.
 Nuppude all asub lahter ajaloost mis näitab kasutaja viimased arvutused. 
-![](Pics/Capture.JPG)
+![](Pics/Capture2.JPG)
 Funktsionaalsuse poole pealt leht toimib hästi mobiil lehena ka. Lehe funktsionaalsuse nuppud Tan Sin Cos x ruudus, , ruutjuur ja logaritm toimivad koheselt ehk kasutaja sisestatud andmed on kohe arvuatud. ülejäänud nuppud toimuvad tava sisestusega kuni kasutaja vajutab "=" võrdus märki. 
 
 
