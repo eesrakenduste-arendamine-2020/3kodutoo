@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous">
+    </script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <p>Page By Herman Petrov</p>
+    <div id="Repo">
+        <form action="https://github.com/hp355837/3kodutoo.git">   
+            <input type="submit" value="Repo">
+         </form>
+    </div>
+    <div id="dayNight">
+        <input id="cycle" value="Turn on Night mode" type="submit"></input>
+    </div>
+    <br>
+    <br>
+    <div class="main">
+        <h1 id="MainHeading">Calculator</h1>
+        <h3>Your recent solution</h3>
+        <input type="button" id="recentSolution" name="recentSolution" value=""></input>
+    <h3>Whats your next move?</h3>
+    </div>
+    <div class="secondary">
+        <form name = "form" >
+            <textarea class="textview" name="textview" maxlength="10" placeholder="69*420"></textarea>
+        </form>
+        <table id="tableMain">
+            <tr>
+                <td><button value="C" onclick="clean()">C</button></td>
+                <td><button value="<" onclick="backspace()"><</button></td>
+                <td><button value="/" onclick="insert('/')">/</button></td>
+                <td><button value="*" onclick="insert('*')">●</button></td>
+                <td><button onclick="calcLog()" >Log</button></td>
+            </tr>
+            <tr>
+                <td><button value="7" onclick="insert(7)">7</button></td>
+                <td><button value="8" onclick="insert(8)">8</button></td>
+                <td><button value="9" onclick="insert(9)">9</button></td>
+                <td><button value="+" onclick="insert('+')">+</button></td>
+                <td><button value="-" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" onclick="insert(4)">4</button></td>
+                <td><button value="5" onclick="insert(5)">5</button></td>
+                <td><button value="6" onclick="insert(6)">6</button></td>
+                <td><button onclick="insert('.')">.</button></td>
+                <td><button onclick="calcPower2()" >X^2</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" onclick="insert(1)">1</button></td>
+                <td><button value="2" onclick="insert(2)">2</button></td>
+                <td><button value="3" onclick="insert(3)">3</button></td>
+                <td><button value="0" onclick="insert(0)">0</button></td>
+                <td><button value="=" onclick="equalMain(),clean()">=</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calcTan()" >TAN</button></td>
+                <td><button onclick="calcSin()">SIN</button></td>
+                <td><button onclick="calcCos()" >COS</button></td>
+                <td><button onclick="insert('^')">X^a</button></td>
+                <td><button onclick="calcSRoot()" >√</button></td>
+            </tr>
+        </table>
+        <div class="historyShower">
+            <h3>History of Calculation</h3>
+            <table id="history"></table>
+            <td></td>
+        </div>
+    </div>
+</body>
+</html>

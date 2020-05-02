@@ -1,0 +1,98 @@
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    background-color: #FFFAF0;
+}
+button{
+    width: 40px;
+    height: 40px;
+    background-color: #191970;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+p{
+  font-family: Calibir;
+  color: #191970;
+  font-weight: bold;
+  font-style: italic;
+}
+h1{
+  color: #191970;
+}
+h3{
+  color: #191970;
+}
+input{
+width: auto;
+height: auto;
+  background-color: white;
+  color: black;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+textarea{
+height: auto;
+grid-column: 1/-1;
+background-color: white;
+color: black;
+border: 2px solid purple;
+border-radius: 10px;
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 10px;
+word-wrap:break-word ;
+overflow: hidden;
+pointer-events: none;
+}
+
+#recentSolution{
+  background-color: white;
+  color: black;
+  border: 2px solid purple;
+  border-radius: 10px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.textview{
+  resize: both;
+  overflow:auto;
+    text-align: center;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    word-wrap: 10;
+}
+
+.secondary{
+  display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+  display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.historyShower{
+text-align:center ;
+align-items: center;
+background-color: white;
+color: black;
+border: 2px solid purple;
+border-radius: 10px;
+align-items: center;
+padding: 10px;
+width: 250px;
+}
