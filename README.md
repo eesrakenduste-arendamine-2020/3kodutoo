@@ -22,3 +22,4 @@ kasutasin abi sellelt lehelt:https://www.youtube.com/watch?v=JDiurjhpOXA
 Lehel on kalkulaator,mis töötab, kus on võimalik panna day and night versioon. Tagataustaks tuleb vastavalt muusika, mis versioon hetkel aktiivne on. Kalkulaatori all näitab ka ajalugu.
 
 Autor: Gevin Genro Paas
+link: http://www.tlu.ee/~ggpaas/Eesrakendused/Homework3/calc.html
