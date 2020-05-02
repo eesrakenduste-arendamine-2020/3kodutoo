@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     margin:0;
+    background-color: #FFFAF0;
 }
 button{
     width: 40px;
@@ -12,6 +13,12 @@ button{
     color: white;
     border: 2px solid purple;
     border-radius: 10px;
+}
+p{
+  font-family: Calibir;
+  color: #191970;
+  font-weight: bold;
+  font-style: italic;
 }
 h1{
   color: #191970;
@@ -86,6 +93,5 @@ border: 2px solid purple;
 border-radius: 10px;
 align-items: center;
 padding: 10px;
-width: 400px;
-left: 540px;
+width: 250px;
 }

@@ -199,6 +199,7 @@ function calcLog() {
 }
 
 function addPreviousValue() {
+  console.log("high");
   if (
     answer.value != NaN ||
     answer.value == Infinity ||
@@ -335,6 +336,7 @@ function switchCycles() {
     $("button").css("color", "white");
     $("button").css("background-color", "black");
     $("body").css("background-color", "#191970");
+    $("p").css("color", "white");
     $("h1").css("color", "white");
     $("h3").css("color", "white");
 
@@ -346,10 +348,11 @@ function switchCycles() {
     $("h3").css("color", "#191970");
     $("button").css("background-color", "#191970");
     $("h1").css("color", "#191970");
+    $("p").css("color", "#191970");
     console.log(mode.value);
     mode.value = "Turn on Night mode";
     colorMode = "White";
-    $("body").css("background-color", "white");
+    $("body").css("background-color", "#FFFAF0");
   }
 }
 
@@ -366,9 +369,8 @@ function updateApost() {
   }
 }
 
-cycle.addEventListener("click", switchCycles);
-melody.addEventListener("click", turnOnTheBeat);
-previousanswer.addEventListener("click", addPreviousValue2);
+
+
 
 
 function storeC(){
@@ -380,4 +382,5 @@ function storeC(){
         document.getElementById("history").innerHTML=calculations;
     }
 }
-
+cycle.addEventListener("click", switchCycles);
+previousanswer.addEventListener("click", addPreviousValue2);
