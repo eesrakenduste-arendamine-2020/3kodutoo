@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('ul').click(function(){
+          $('ul').toggleClass('active')
+          $('body').toggleClass('paev')        
+          $('.row-input').toggleClass('paev')
+          $('button').toggleClass('paev')        
+
+        })
+      })
+      </script>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <span>Öö</span>
+        <span>Päev</span>
+      </li>
+    </ul>
+    <div class="row-input">
+        <input value="0" id="input"></input>
+      </br>
+      
+        <button id='ac' class='operator'>AC</button>
+        <button id='ce' class='operator'>CE</button>
+        <button id='percent' class='operator'>%</button>
+        <button id='divide' class='operator'>÷</button>
+      </br>
+        <button id='7' class='number'>7</button>
+        <button id='8' class='number'>8</button>
+        <button id='9' class='number'>9</button>
+        <button id='x' class='operator'>x</button>
+      </br>
+        <button id='4' class='number'>4</button>
+        <button id='5' class='number'>5</button>
+        <button id='6' class='number'>6</button>
+        <button id='minus' class='operator'>-</button>
+      </br>
+        <button id='1' class='number'>1</button>
+        <button id='2' class='number'>2</button>
+        <button id='3' class='number'>3</button>
+        <button id='plus' class='operator'>+</button>
+      </br>
+        <button id='0' class='number'>0</button>
+        <button id='dot' class='operator'>.</button>
+      <!--   <button id='equals'>=</button> -->
+        <button id='enter' class='double'>vastus</button>
+        
+
+      </div>
+      
+     
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
