@@ -39,6 +39,7 @@ Kasutaja ees on olemas pealkiri "Calculator", "Your recent solution" tähendb ka
 Alumine lahter on "Whats your next move?" ehk kuhu kasutaja sisetab enda andmed.
 
 Kalkulaator töötab vaid nuppudu vajutustega ehk muudpidi ei saa sisestada teksti.
+Kasutaja sisestus võib olla pikk ja vajaduse võib sisestus akna aga venitada, et näha kas ülal või all olevat tehete järjekorra.
 Nuppude all asub lahter ajaloost mis näitab kasutaja viimased arvutused. 
 ##
 ![](Pics/Capture2.JPG)
