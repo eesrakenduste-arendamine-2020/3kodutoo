@@ -31,7 +31,8 @@ Iseseisvalt olen loonud paljud tingimused funktsioonidele, funktsioonid ja css k
 
 DETAILSEM SELGITUS:
 
-![](Pics/Opera Snapshot_2020-05-03_004117_www.tlu.ee.png)
+![](Pics/Capture.JPG)
+
 
 
 
