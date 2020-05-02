@@ -1,16 +1,13 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+<h1> Autor: <b>Marten Jürgens</b> </h1>
 
-## Tähtaeg 02.05.2020 23:59
+![Dark](https://i.imgur.com/rE0R8gv.png)
+![Light](https://i.imgur.com/BQpYRLC.png)
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
+<h2>Funktsionaalsus</h2>
 
-## Nõuded
+Kalkulaator nagu kalkulaator ikka
 
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+Lisatud enda poolt ruutjuure, ruutu võtmise ja protsendi funktsioonid.
+
+Kuu ikoonile klikkides saab muuta dark- ja light mode-i vahel.
+
