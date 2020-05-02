@@ -1,5 +1,6 @@
 ![Näidis](Kalkulaator1.JPG)
 # 3kodutoo Henry Pajuri
+
 3. kodutöö Eesrakenduste arendamises. Tegemist on küllatki lihtsa ning kergesti arusaadava rakendusega.
 
 Kodutöö tegemiseks kasutasin õpetust: https://www.youtube.com/watch?v=JDiurjhpOXA
