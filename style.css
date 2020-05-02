@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  #maker {
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    margin-left: 900px
+}
+ #repo {
+  font-weight: bold;
+  color: rgb(3, 82, 49);
+  margin-left: 900px;
+}
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(yellow, purple);
+  }
+  body.dark {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(rgb(0, 0, 0), rgb(21, 1, 58));
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+  }
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: 1px solid darkblue;
+    outline: none;
+    color: darkblue;
+    background-color: rgb(151, 153, 163);
+  
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgb(23, 233, 238);
+    box-shadow: 0px 10px 30px rgb(23, 233, 238);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: darkblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: gray;
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 200px;
+    height: 100px;
+    background: rgb(248, 217, 217);
+    display: block;
+    border-radius: 100px;
+    position: absolute;
+  }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: rgb(73, 1, 73);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: #110164;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+  
+  
