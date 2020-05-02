@@ -1,0 +1,127 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: white;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+#container{
+	width: 90vw;
+	height: 110vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)), url(tlu.jpg);
+	margin: 20px auto;	
+}
+#calculator{
+	width: 480px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20vh;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty, .night{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.night{
+	width: 100px;
+	height: 100px;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator, .night{
+	cursor: pointer;
+}
+.operator:active, .number:active, .night:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus, .night:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #b71234;
+}
+button:nth-child(10){
+	font-size: 20px;
+	background-color: #2f2f2f;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #ffffff;
+}
+button:nth-child(22){
+	font-size: 20px;
+	background-color: #808080;
+}
+button:nth-child(28){
+	font-size: 20px;
+	background-color: #b82333	;
+}
+
+button:nth-child(5),
+button:nth-child(11),
+button:nth-child(17) {
+	font-size: 15px;
+	background-color: #0cd20c;
+}
+
+button:nth-child(6),
+button:nth-child(12) {
+	font-size: 15px;
+	background-color: #6a6ad8;
+}
+
+button:nth-child(18),
+button:nth-child(23),
+button:nth-child(24) {
+	font-size: 15px;
+	background-color: #54b754;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-calculator{
+	background-color: black !important;
+	box-shadow: 0 10px 20px 0 rgba(218, 13, 13, 0.2), 0 10px 30px 0 rgba(241, 6, 6, 0.19) !important;
+}
+
+.dark-dots{
+	background-color: black;
+}
+
+.dark-picture{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(226, 13, 13, 0.3)), url(tlu-dark.jpg) !important    ;
+}
