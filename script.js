@@ -124,6 +124,7 @@ for(var i =0;i<operator.length;i++){
 				history=history+output;
 				if(this.id=="="){
 					var result=eval(history);
+					savePreviousCalculations(history, result);
 					printOutput(result);
 					printHistory("");
 				}
@@ -146,4 +147,15 @@ for(var i =0;i<number.length;i++){
 			printOutput(output);
 		}
 	});
+}
+function savePreviousCalculations(calculation, result){
+	document.getElementById("calculationsHeader").innerHTML = "<b>Eelmised kalkulatsioonid:</b>";
+	document.getElementById("calculations").innerHTML += "<div style='margin-left: 2vw'>"+calculation+"="+result+"</div>";
+	document.getElementById("calculationsButton").innerHTML = "<br><button onclick='deleteAllCalculations()' class='deleteButton'>Kustuta kõik kalkulatsioonid</button>";
+}
+
+function deleteAllCalculations(){
+	document.getElementById("calculationsHeader").innerHTML = "";
+	document.getElementById("calculations").innerHTML = "";
+	document.getElementById("calculationsButton").innerHTML = "";
 }

@@ -56,16 +56,23 @@ body{
 	width: 100px;
 	height: 100px;
 }
-.number, .empty{
+.number, .empty. deleteButton{
 	background-color: #eaedef;
 }
-.number, .operator, .night{
+.number, .operator, .night, .deleteButton{
 	cursor: pointer;
 }
-.operator:active, .number:active, .night:active{
+.operator:active, 
+.number:active, 
+.night:active, 
+.deleteButton:active{
 	font-size: 13px;
 }
-.operator:focus, .number:focus, .empty:focus, .night:focus{
+.operator:focus, 
+.number:focus, 
+.empty:focus, 
+.night:focus, 
+.deleteButton:focus{
 	outline: 0;
 }
 button:nth-child(4){
@@ -108,9 +115,15 @@ button:nth-child(24) {
 	font-size: 15px;
 	background-color: #54b754;
 }
+.deleteButton {
+	margin-left: 2vw;
+	background-color: #eaedef;
+	border-color: #504245;
+	border-radius: 5px;
+}
 .dark-mode {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 .dark-calculator{
