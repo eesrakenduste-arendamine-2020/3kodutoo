@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                crossorigin="anonymous">
+    </script>
+  <title>Calculator</title>
+
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div data-mode>
+    <input id="mode" value="Night mode" type="submit"></input>
+  </div>
+  <h2>Daniel Eelmaa</h2>
+  <h2>https://github.com/daneelm/3kodutoo</h2>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-sqrt>√</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>*</button>
+    <button data-square>x^2</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-operation>^</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>-</button>
+    <button data-log>ln</button>
+    <button data-number>0</button>
+    <button data-number>.</button>
+    <button data-equals class="span-three">=</button>
+    <div class="historyDiv">
+      <h1 id="tableT">History</h1>
+      <table id="historyList"></table>
+          <td id="cell"></td>
+    </div>
+  </div>
+  
+</body>
+</html>
