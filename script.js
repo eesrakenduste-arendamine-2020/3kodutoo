@@ -1,3 +1,7 @@
+let repo = document.querySelector('#repo');
+repo.addEventListener("click", ()=>{
+    window.location.href="https://github.com/karlpihlakas/3kodutoo";
+});
 class Calculator{
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
