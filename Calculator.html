@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulaator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Calculator.js" defer></script>
+</head>
+
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Kalkulaator, autor Edgar Lainelo</h1>
+        </header>
+    </div>
+    <div class="container">
+        <div class="item input"><form name="form"><input type="text" name="textview" readonly></form></div>
+        <div class="item" onclick="insert('7')">7</div>
+        <div class="item" onclick="insert('8')">8</div>
+        <div class="item" onclick="insert('9')">9</div>
+        <div class="item color" onclick="insert('(')">(</div>
+        <div class="item color" onclick="insert(')')">)</div>
+        <div class="item" onclick="insert('4')">4</div>
+        <div class="item" onclick="insert('5')">5</div>
+        <div class="item" onclick="insert('6')">6</div>
+        <div class="item color" onclick="insert('*')">&times;</div>
+        <div class="item color" onclick="insert('/')">&divide;</div>
+        <div class="item" onclick="insert('1')">1</div>
+        <div class="item" onclick="insert('2')">2</div>
+        <div class="item" onclick="insert('3')">3</div>
+        <div class="item color" onclick="insert('+')">+</div>
+        <div class="item color" onclick="insert('-')">-</div>
+        <div class="item" onclick="insert('.')">.</div>
+        <div class="item 0" onclick="insert('0')">0</div>
+        <div class="item B" onclick="back()">&larr;</div>
+        <div class="item pow color" onclick="pow()">x<sup>2</sup></div>
+        <div class="item sqrt color" onclick="sqrt()">&radic;</div>
+        <div class="item sin color" onclick="sin()">sin</div>
+        <div class="item cos color" onclick="cos()">cos</div>
+        <div class="item tan color" onclick="tan()">tan</div>
+        <div class="item C" onclick="clean()">C</div>
+        <div class="item E" onclick="eq()">=</div>
+        
+    </div>
+
+
+    </script>
+</body>
+
+
+
+
+</html>
