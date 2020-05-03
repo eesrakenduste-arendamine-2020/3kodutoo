@@ -1,6 +1,5 @@
 # 3kodutoo  Jan Morten Kivi
 
-1. Õpetuse link: https://www.youtube.com/watch?v=j59qQ7YWLxw&t=1680s
 
 1. Lehel on võimalik kasutada Päeva ja öö režiimi. 
 1. Korrutamine, jagamine, liitmine, lahutamine, ruutjuur, pii, komaga arvude lisamine ning astendamise võimalus. 
