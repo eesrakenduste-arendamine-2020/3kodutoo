@@ -11,24 +11,24 @@
   </head>
   <body>
     <div class="kalkulaator"> 
-  <table width="80%" align="center" border: 1px solid black;>
+  <table width="80%" >
    
        <tr>
        <td>
         <div class="calculator-grid">
                 <div class="output">
-                <div data-previous-operand class="previous-operand"></div>
-                <div data-current-operand class="current-operand"></div>
+                  <div data-previous-operand class="previous-operand"></div>
+                  <div data-current-operand class="current-operand"></div>
                 </div>
-            <button data-operation class="span-two cal_tumehall">x²</button>
-            <button data-operation class="span-two cal_tumehall">√</button>
+            <button data-operation-symbols class="span-two cal_tumehall">x²</button>
+            <button data-operation-symbols class="span-two cal_tumehall">√</button>
             <button data-operation class="cal_oranz">*</button>
-            <button data-operation class="cal_tumehall">x³</button>
+            <button data-operation-symbols class="cal_tumehall">x³</button>
             <button data-number>7</button>
             <button data-number>8</button>
             <button data-number>9</button>
             <button data-operation class="cal_oranz">÷</button>
-            <button data-operation class="cal_tumehall">∛</button>
+            <button data-operation-symbols class="cal_tumehall">∛</button>
             <button data-number>4</button>
             <button data-number>5</button>
             <button data-number>6</button>
@@ -46,8 +46,9 @@
       </td>
       <td>
         <div class="ajalugu"> 
-            <div class="output">Mis siin sees on ?
-            <div data-current-operand class="previous-operand"></div>
+            <div class="ajalugu_output">
+            <div ajalugu-data-current-operand class="ajalugu-data-current-operand"></div>
+            <div ajalugu-data-previous-operand class="ajalugu-data-previous-operand"></div>
             </div>
         </div>
       </td>
