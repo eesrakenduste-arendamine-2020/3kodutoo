@@ -1,3 +1,10 @@
+Autor: Robin Kadakas
+Funktsionaalsusest nii palju et lisasin ruutjuure leidmise ja astendamise. Ajalugu kuvab ka ilusti, kuid probleemiks millele lahendust ei leinud oli see, et ajaloos iga tehte vahele läheb koma. On võimalik vahetada öö/päeva reziimi.
+Kasutasin ka õpetust - https://www.youtube.com/watch?v=j59qQ7YWLxw, mille kaudu sain teada palju uut.
+
+
+
+
 # 3kodutoo - 15 punkti
 3. kodutöö Eesrakenduste arendamises.
 
