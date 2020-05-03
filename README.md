@@ -1,5 +1,7 @@
 http://www.tlu.ee/~tluur/kodune3/
 
+![](pic/git.jpg)
+
 
 
 # 3kodutoo - 15 punkti
