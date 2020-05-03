@@ -13,5 +13,5 @@ Kasutatud on https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator m
 
 Rakendus asub greeny.cs.tlu.ee/~punkel/veebiprogrammeerimine/3-kodutoo
 
-![](Kalkulaator.png)
+![](Kalkulaator_v2.png)
 
