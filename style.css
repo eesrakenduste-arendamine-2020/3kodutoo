@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+header > h1 {
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+    background-color: rgb(225, 247, 255);
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    
+    margin: 4px;
+    border-radius: 5px;
+
+    max-width: 360px;
+    font-family: "Asap", sans-serif;
+
+}
+
+.item {
+    height: 45px;
+    background: rgba(111, 186, 221, 0.322);
+    border: none;
+    
+    color: black;
+    outline: none;
+    margin: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+.item:active{
+    background-color: rgb(94, 94, 94);
+}
+
+form {
+    max-width: 100%;
+}
+
+input {
+    width: 360px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    text-align: right;
+}
+
+.input {
+    grid-column: 1/-1;
+    padding: 0;
+
+}
+
+.C {
+    grid-column: -1/4;
+    grid-row: 6;
+    background-color: rgba(255, 87, 87, 0.61);
+}
+
+.E {
+    grid-column: 1/6;
+    
+    background-color: rgba(80, 132, 148, 0.61);
+
+}
+
