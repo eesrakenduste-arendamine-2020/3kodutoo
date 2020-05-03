@@ -12,3 +12,5 @@ Ajaloo DIV on toodud kalkulaatori kõrvale(vaja fixida)
 Kasutatud on https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator materjale ja https://www.youtube.com/watch?v=j59qQ7YWLxw õpetust
 
 Rakendus asub greeny.cs.tlu.ee/~punkel/veebiprogrammeerimine/3-kodutoo/
+
+![](Screenshot 2020-05-02 at 13.27.57.jpg)
