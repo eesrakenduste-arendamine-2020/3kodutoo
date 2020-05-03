@@ -21,4 +21,4 @@ Kalkulaatoril saab kasutada ALLCLEAR(kustutab kõik) funktsiooni ning DELETE nup
 Kalkulaatoril on toggle nupuga light/dark mode, mille eesmärk on täita öö- ja päevarežiimi nõudeid.
 Kasutatud on õpetust(https://www.youtube.com/watch?v=j59qQ7YWLxw).
 
-![](Screenshot%202020-05-03%20at%2020.07.49.png)
+![](pilt.png)
