@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+</style>
+<p>Autor: Robin Kadakas</p>
+<a href="https://github.com/cadaroba/3kodutoo">GitHub</a>
+<h1>Öö/päeva reziim</h1>
+<p>Vajuta nupule, et vahetada reziimi.</p>
+
+<button onclick="myFunction()">Päev/öö</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">CE</button>
+    <button data-delete>Del</button>
+    <button data-operation>÷</button>
+    <button data-operation>*</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>+</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>-</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button sqrt-operation>√</button>
+    <button square-operation>x2</button>
+    <button data-equals class="span-two">=</button>
+    <div class="Div1">
+      <h1 id="heading1">Ajalugu</h1>
+      <table id="histList"></table>
+    </div>
+  </div>
+</body>
+</html>
+
+

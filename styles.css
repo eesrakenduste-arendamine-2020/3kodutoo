@@ -1,0 +1,87 @@
+*, *::before, *::after { /*valib enne elemendid, pärast elemendid ja kõik elemendid*/
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  body {
+    padding: 0;/*tagataust terve ekraan*/
+    margin: 0;/*tagataust terve ekraan*/
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(129, 0, 0));
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 30px;
+    right: 500px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);/*auto sest siis saab rohkem arve kasutada*/
+  }
+  
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 50px round white;
+    outline: none;
+    background-color: rgba(168, 154, 154, 0.822);
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(209, 139, 8, 0.9);
+    border-radius: 30px;
+  }
+  
+  .span-two {
+    grid-column: span 1;/*teeb nupu laiaks*/
+  }
+  
+  .output {
+    border-radius: 30px 30px 0px 0px;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
+
+
+  .Div1{
+    position: absolute;
+    background-color: rgb(97, 6, 6);
+    right:-450px;
+    top:10px;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px
+  }
+
+  #histList{
+    text-align: center;
+  }
+
+  #heading1{
+    text-align: center;
+  }
+
+
+  
