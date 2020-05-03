@@ -10,10 +10,11 @@
     <script>
       $(document).ready(function(){
         $('ul').click(function(){
-          $('ul').toggleClass('active')
+          $('ul').toggleClass('paev')
           $('body').toggleClass('paev')        
           $('.row-input').toggleClass('paev')
-          $('button').toggleClass('paev')        
+          $('button').toggleClass('paev')
+          $('.nimi').toggleClass('paev')         
 
         })
       })
@@ -56,11 +57,10 @@
         <button id='enter' class='double'>vastus</button>
         
 
-      </div>
-      
-     
-    </div>
-
+      </div>     
+    </div>    
+    <p id="koostas" class="nimi">Taavi Luur</p>
+    <p id="git"><a href="https://github.com/tluur/3kodutoo">Git</a></p>
     <script src="main.js"></script>
   </body>
 </html>

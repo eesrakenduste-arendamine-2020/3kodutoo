@@ -1,12 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: -1000px;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   background-color: #000;
@@ -22,7 +17,7 @@ body.paev {
 
 ul {
   position: absolute;
-  top: 20px;
+  top: 200px;
   right: 20px;
   margin: 0;
   padding: 0;
@@ -32,7 +27,6 @@ ul {
   border: 1px solid #000;
   overflow: hidden;
   cursor: pointer;
-
 }
 
 ul li {
@@ -42,7 +36,6 @@ ul li {
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-
 }
 
 ul li span {
@@ -51,22 +44,21 @@ ul li span {
   line-height: 30px;
 }
 
-ul.active li {
+ul.paev li {
   transform: translateY(-30px);
 }
 
-ul li span:nth-child(1){
+ul li span:nth-child(1) {
   background: rgb(0, 0, 0);
-  color : #ffff
+  color: #ffff;
 }
 
-.row-input{
+.row-input {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  padding-top: 200px;
   height: 400px;
   width: 400px;
-  
 }
 
 #enter {
@@ -82,7 +74,7 @@ ul li span:nth-child(1){
 }
 #input {
   text-align: right;
-  width: 372px;
+  width: 370px;
   overflow-x: auto;
   font-size: 55px;
   white-space: nowrap;
@@ -100,8 +92,35 @@ button.double {
 button:hover {
   background-color: rgb(241, 204, 37);
 }
-.number.paev{
+.number.paev {
   color: rgb(182, 17, 247);
 }
 
+#koostas {
+  position: fixed;
+  bottom: 80px;
+  right: 5px;
+  font-family: "Raleway";
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
 
+#git {
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  font-family: "Raleway";
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
+
+.nimi.paev {
+  
+  text-shadow: 5px 5px black;
+}
