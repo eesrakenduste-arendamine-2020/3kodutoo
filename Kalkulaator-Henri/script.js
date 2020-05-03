@@ -156,7 +156,7 @@ deleteButton.addEventListener('click', button => {
 
 function myLink() {
   var str = "Repositooriumi link";
-  var result = str.link("https://www.delfi.ee");
+  var result = str.link("https://github.com/henrimag/3kodutoo");
   document.getElementById("link").innerHTML = result;
 }
 
