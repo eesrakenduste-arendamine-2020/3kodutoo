@@ -1,3 +1,7 @@
+http://www.tlu.ee/~tluur/kodune3/
+
+
+
 # 3kodutoo - 15 punkti
 3. kodutöö Eesrakenduste arendamises.
 
