@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(96, 189, 96), rgb(216, 86, 216));
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: rgba(202, 126, 26, 0.89);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);;
+}
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(28, 134, 196, 0.75);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 2.5rem;
+}
+
+#link {
+    position: absolute;
+    font-size: 1.25rem;
+    top: 70px;
+    left: 50px;
+    }
+
+.myLink {
+    font-size: 2rem;
+}
+
+.switch {
+    position: absolute;
+    flex-direction: column;
+    font-size: 1.25rem;
+    top: 200px;
+    left: 50px;
+}
+
+.inner-switch {
+    top: 100px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid rgb(14, 4, 4);
+    border-radius: 1.5rem;
+    width: 3.6rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.2rem;
+    margin-left: 0.3125rem;
+}
+
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
