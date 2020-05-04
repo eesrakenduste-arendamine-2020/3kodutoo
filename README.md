@@ -7,9 +7,9 @@ Lisasin ruudu, kuubi, pii ja ruutjuure funktsioonid.
 
 Day mode:
 
-![calc_light.jpg]
+![](calc_light.jpg)
 
 
 Night mode:
 
-![calc_dark.jpg]
+![](calc_dark.jpg)
