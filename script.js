@@ -1,4 +1,4 @@
-let history = [];
+
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
@@ -181,18 +181,12 @@ function addNightMode(){
     var body = document.body;
     var outputField = document.getElementById("output");
     var buttons = document.querySelectorAll("button.test");
-
-       
-    //var buttons = document.getElementById("buttons");
     var i;
+
     for(i = 0; i < buttons.length; i++){
-        console.log("sadasd" + buttons[i]);
-        console.log("JOBI");
         buttons[i].classList.toggle("darkButtons");
     }
     
-
-    //buttons.classList.toggle("darkButtons");
     body.classList.toggle("dark-mode");
     outputField.classList.toggle("dark");
 }
