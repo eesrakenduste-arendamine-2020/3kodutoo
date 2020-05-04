@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kalkulaator</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>    
+    <h1><div id="heading">Jan Morten Kivi</h1></div>
+    <p>
+        
+      <a href="https://github.com/janmortenk/3kodutoo" target="_blank"
+        >Githubi link</a>
+    
+    <hr>
+</head>
+<body>
+    <section id = "sec1">
+        <div>
+            <label>Change background:</label>
+            <button type="button" onclick="changeBodyBg('brown');" class="sec1">Night mode</button>
+            <button type="button" onclick="changeBodyBg('lightgrey');" class="sec1">Day mode</button>
+        </div>
+        <br>
+    <div>
+        <label>Change calculator:</label>
+        <button type="button" onclick="changeCalcBg('black');" class="sec1">Night Mode</button>
+        <button type="button" onclick="changeCalcBg('tan');"  class="sec1"> Day Mode</button>
+    </div>
+    
+    
+</section>
+    <div id="calculator-grid" class="calculator-grid">
+      <div id="output" class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-two">Delete</button>
+      <button data-delete class="span-two">Back <-</button>
+      <button data-operation>√</button>
+      
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>x</button>
+      <button data-operation>÷</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-operation>π</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-operation>x²</button>
+      <button empty></button>
+      <button data-number>0</button>
+      <button data-operation>e</button>
+      <button data-number>.</button>
+      <button data-equals>=</button>
+    </div>
+
+</section>
+<script>
+    function changeBodyBg(color){
+        document.body.style.background = color;
+
+    }
+    function changeCalcBg(color){
+        document.getElementById("output").style.background = color;
+        
+    }
+
+</script>
+
+</body>
+</html>
