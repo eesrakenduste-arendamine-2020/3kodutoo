@@ -1,3 +1,4 @@
+let history = [];
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement;
@@ -49,6 +50,9 @@ class Calculator {
             case '÷':
                 computation = prev / current;
                 break
+            case 'x³':
+                computation = current * current *current;
+                break
             default:
                 return
         }
@@ -82,6 +86,30 @@ class Calculator {
             this.previousOperandTextElement.innerText = '';
         }
     }
+
+    squareFunction(){
+        const current = parseFloat(this.currentOperand);
+        this.currentOperand = current * current;
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand);
+    }
+
+    cubeFunction(){
+        const current = parseFloat(this.currentOperand);
+        this.currentOperand = current * current * current;
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand);
+    }
+
+    piFunction(){
+        this.currentOperand = 3.1415926;
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand);
+    }
+
+    sqrtFunction(){
+        const current = parseFloat(this.currentOperand);
+        this.currentOperand = Math.sqrt(current);
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand);
+    }
+    
 }
 
 
@@ -94,8 +122,14 @@ const deleteButton = document.querySelector('[data-delete]');
 const allClearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
+const squareButton = document.querySelector('[data-operation-square]');
+const cubeButton = document.querySelector('[data-operation-cube]');
+const piButton = document.querySelector('[data-operation-pi]');
+const sqrtButton = document.querySelector('[data-operation-sqrt]');
 
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement);
+
+
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -125,3 +159,40 @@ deleteButton.addEventListener('click', button => {
     calculator.delete();
     calculator.updateDisplay();
 });
+
+squareButton.addEventListener('click', button => {
+    calculator.squareFunction();
+});
+
+cubeButton.addEventListener('click', button => {
+    calculator.cubeFunction();
+});
+
+piButton.addEventListener('click', button => {
+    calculator.piFunction();
+});
+
+sqrtButton.addEventListener('click', button => {
+    calculator.sqrtFunction();
+});
+
+
+function addNightMode(){
+    var body = document.body;
+    var outputField = document.getElementById("output");
+    var buttons = document.querySelectorAll("button.test");
+
+       
+    //var buttons = document.getElementById("buttons");
+    var i;
+    for(i = 0; i < buttons.length; i++){
+        console.log("sadasd" + buttons[i]);
+        console.log("JOBI");
+        buttons[i].classList.toggle("darkButtons");
+    }
+    
+
+    //buttons.classList.toggle("darkButtons");
+    body.classList.toggle("dark-mode");
+    outputField.classList.toggle("dark");
+}

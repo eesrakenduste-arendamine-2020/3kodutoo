@@ -7,7 +7,8 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: aqua;
+    background-color: rgba(252, 30, 30, 0.897);
+    background-image: linear-gradient(white, rgba(89, 255, 241, 0.959));
 }
 
 .calculator-grid {
@@ -15,29 +16,32 @@ body{
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(5, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
+    border: 1px solid rgb(179, 255, 249);
     outline: none;
-    background-color: rgba(255, 255, 255, .75);
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(207, 209, 209, 0.795);
 }
 
-.span-two {
+.span-two.test {
     grid-column: span 2;
+}
+
+.span-three.test {
+    grid-column: span 3;
 }
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: white;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -48,11 +52,37 @@ body{
 }
 
 .output .previous-operand {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(117, 117, 117, 0.75);
     font-size: 1.5rem;
 }
 
 .output .current-operand {
-    color: white;
+    color: black;
     font-size: 2.5rem;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    background-image: linear-gradient(black, rgba(34, 10, 124, 0.712));
+}
+
+.dark{
+    background-color: gray;
+}
+
+.darkButtons {
+    background-color:rgba(90, 89, 89, 0.897);
+    color:rgba(216, 216, 216, 0.932);
+}
+
+.output.dark .current-operand {
+    color: rgba(216, 216, 216, 0.932);
+    font-size: 2.5rem;
+}
+
+.output.dark .previous-operand {
+    color: rgba(48, 48, 48, 0.945);
+    font-size: 1.5rem;
+}
+
