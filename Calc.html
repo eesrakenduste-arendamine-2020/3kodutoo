@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<script
+  	src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="topnav">
+  <a href="https://github.com/kkkand/3kodutoo">Github Repo</a>
+  <a>Kristjan Känd</a>
+  <button class="darkBtn" onclick="darkMode()" >Toggle Dark Mode</button>
+</div>
+ 
+  
+	<div class="calc">
+        
+
+		<form name="form">
+			<input class="calc-display" name="display" placeholder="0">
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" value="C" onclick="c()"></td>
+				<td><input type="button" value="/" onclick="insrt('/')"></td>
+				<td><input type="button" value="DEL" onclick="del()"></td>
+				<td><input type="button" value="X" onclick="insrt('*')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Tan" onclick="makeTang()"></td>
+				<td><input type="button" value="Sin" onclick="makeSin()"></td>
+				<td><input type="button" value="Cos" onclick="makeCos()"></td>
+				<td><input type="button" value="x2" onclick="square()"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="insrt(7)"></td>
+				<td><input type="button" value="8" onclick="insrt(8)"></td>
+				<td><input type="button" value="9" onclick="insrt(9)"></td>
+				<td><input type="button" value="-" onclick="insrt('-')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="insrt(4)"></td>
+				<td><input type="button" value="5" onclick="insrt(5)"></td>
+				<td><input type="button" value="6" onclick="insrt(6)"></td>
+				<td><input type="button" value="+" onclick="insrt('+')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="insrt(1)"></td>
+				<td><input type="button" value="2" onclick="insrt(2)"></td>
+				<td><input type="button" value="3" onclick="insrt(3)"></td>
+				<td><input type="button" value="00" onclick="insrt('00')"></td>
+				
+			</tr>
+			<tr>
+				<td><input type="button" value="0" onclick="insrt(0)"></td>
+				
+				<td><input type="button" value="." onclick="insrt('.')"></td>
+				<td colspan="2"><input type="button" value="=" onclick="eql()" style="width: 152px"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="script.js" defer></script>
+		
+</body>
+</html>
