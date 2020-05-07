@@ -2,9 +2,9 @@ http://www.tlu.ee/~tluur/kodune3/
 
 ![](pic/git2.jpg)
 
-Rakendus töötab.
-On olemas öö ja päeva resiim
-Kuidas teha vaatasin "juu tuubist" : https://www.youtube.com/results?search_query=javascript+calculator+tutorial
+#Rakendus töötab.
+#On olemas öö ja päeva resiim
+#Kuidas teha vaatasin "juu tuubist" : https://www.youtube.com/results?search_query=javascript+calculator+tutorial
 
 terv.
 
