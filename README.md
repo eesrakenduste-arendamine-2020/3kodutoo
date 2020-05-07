@@ -2,4 +2,3 @@ Autor Maksim Sitkin, Lisatud funktsioon kalkulaatorisse Pi-numbri kirjutamiseks,
 
 https://imgur.com/a/RurYcA4
 
-http://localhost:5555/~maksisit/kalkulaator/
