@@ -1,6 +1,6 @@
 http://www.tlu.ee/~tluur/kodune3/
 
-![](pic/git.jpg)
+![](pic/git2.jpg)
 
 
 
