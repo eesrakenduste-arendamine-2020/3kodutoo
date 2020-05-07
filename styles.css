@@ -1,0 +1,166 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+  background-size: cover;
+}
+
+.pod.paev {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+}
+
+ul {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  z-index: 1;
+  border: 1px solid #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+ul li span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+
+ul.paev li {
+  transform: translateY(-30px);
+}
+
+ul li span:nth-child(1) {
+  background: rgb(0, 0, 0);
+  color: #ffff;
+}
+
+#calculator {
+  width: 320px;
+  height: 520px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#result {
+  height: 120px;
+}
+
+.res.paev {
+  height: 120px;
+  background-color: #000;
+  color: #eaedef;
+}
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+#keyboard {
+  height: 400px;
+}
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+.number,
+.empty {
+  background-color: #eaedef;
+}
+.number,
+.operator {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+button:nth-child(20) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+
+#koostas {
+  position: fixed;
+  bottom: 80px;
+  right: 5px;
+  font-family: "Raleway";
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
+
+#git {
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  font-family: "Raleway";
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+}
+
+.nimi.paev {
+  color: black;
+  text-shadow: 5px 5px black;
+}

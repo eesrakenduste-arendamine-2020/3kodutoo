@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulaator</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+  $(document).ready(function(){
+    $('ul').click(function(){
+      $('ul').toggleClass('paev')              
+      $('.row-input').toggleClass('paev')      
+      $('.pod').toggleClass('paev')
+      $('.res').toggleClass('paev')
+      $('.nimi').toggleClass('paev') 
+    })
+  })
+</script>
+
+  </head>
+  <body class="pod">
+    <ul>
+      <li>
+        <span>Öö</span>
+        <span>Päev</span>
+      </li>
+    </ul>
+		<div id="container">
+			<div id="calculator" class="kalk">
+				<div id="result" class="res">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output" calss="outval">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="operator" id="√">√</button>
+					<button class="number" id="0">0</button>
+					<button class="operator" id="π">π</button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+    </div>
+    <p id="koostas" class="nimi">Taavi Luur</p>
+    <p id="git"><a href="https://github.com/tluur/3kodutoo">Git</a></p>
+		<script src="kalk.js"></script>
+  </body>
+</html>
