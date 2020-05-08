@@ -1,16 +1,12 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+# Oliver Kobing
 
-## Tähtaeg 02.05.2020 23:59
+* Veebirakendus töötab
+* Öö- ja pevarežiim
+* 4 lisa funktsiooni
+* Ajaloo funktsionaalsus
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
+Kasutatud on õpetust:
+https://codepen.io/lalwanivikas/pen/eZxjqo?fbclid=IwAR0x_h7hcWuo6-s_GIksRJ5aEZ8I-3il7XjeXIiCQkVTs9XsxPn237PyuE8
 
-## Nõuded
-
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+Ekraanipilt:
+![alt text](https://epo.ee/calculator/calc.png)
