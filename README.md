@@ -5,6 +5,9 @@
 * 4 lisa funktsiooni
 * Ajaloo funktsionaalsus
 
+Link kalkulaatorile:
+https://epo.ee/calculator/
+
 Kasutatud on õpetust:
 https://codepen.io/lalwanivikas/pen/eZxjqo?fbclid=IwAR0x_h7hcWuo6-s_GIksRJ5aEZ8I-3il7XjeXIiCQkVTs9XsxPn237PyuE8
 
