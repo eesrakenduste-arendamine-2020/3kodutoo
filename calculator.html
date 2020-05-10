@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="calculator.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulaator</title>
+    <h2>JS Kalkulaator by Karl Martin Vellik</h2>
+    <button
+      onclick="window.location.href='https://github.com/KVellik/3kodutoo'"
+    >
+      Repo
+    </button>
+  </head>
+  <div class="dark-button">
+    <button id="dark-mode" onclick="darkmode()">
+      Dark mode
+    </button>
+  </div>
+  <body>
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-two">CLEAR</button>
+      <button data-delete class="span-two">DEL</button>
+      <button data-operation>÷</button>
+      <button data-operation-sqrt>√</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>*</button>
+      <button data-operation-x2>X<sup>2</sup></button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-operation-percentage>%</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>-</button>
+      <button data-number class="span-two">0</button>
+      <button data-number>.</button>
+      <button data-equals class="span-two">=</button>
+    </div>
+  </body>
+</html>
