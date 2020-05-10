@@ -146,6 +146,7 @@ equalsButton.addEventListener('click', button => {
   calculator.compute();
   calculator.compute2();
   calculator.updateDisplay();
+})
 
 allClearButton.addEventListener('click', button => {
   calculator.clear();
