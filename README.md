@@ -28,3 +28,6 @@ lisasin neli funktsiooni:
 kalkulaatoril on öö ja päeva režiim ja ajaloofunktsionaalsus
 
 
+![ekraanipilt](https://github.com/NinaWeiss/3kodutoo/blob/master/calc.png)
+
+
