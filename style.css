@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   
+}
+
+.calc-parent {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+   
+}
+
+.calc-parent > button {
+  
+    cursor: pointer;
+    font-size: 32px;
+    border: 1px solid gray;
+    outline: none;
+    
+}
+
+.calc-parent > button:hover {
+    background-color: turquoise;
+}
+
+.span-two.test {
+    grid-column: span 2;
+}
+
+.span-three.test {
+    grid-column: span 3;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: whitesmoke;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid gray;
+}
+
+.output .previous-operand {
+    color: pink;
+    font-size: 2.5rem;
+}
+
+.output .current-operand {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color:white;
+    background: linear-gradient(to right, #536976, #292e49);
+}
+
+.dark{
+    background-color:slategray;
+}
+
+.darkButtons {
+    background-color: lightslategray;
+    color:rgba(216, 216, 216, 0.932);
+}
+
+.darkButtons > button:hover{
+    background-color: lightgrey;
+}
+
+
+
+.output.dark .current-operand {
+    color: rgba(216, 216, 216, 0.932);
+    font-size: 2.5rem;
+}
+
+.output.dark .previous-operand {
+    color: rgba(48, 48, 48, 0.945);
+    font-size: 2.5rem;
+}
+
+
+.calc-history {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 75vh;
+}
+
+.history-elements {
+    color: white;
+    font-size: xx-large;
+    background-color: transparent;
+}
+
+#darkBtn {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .darkModeBtn{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: small;
+  }
+
+  .darkModeBtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    
+</head>
+<body>
+  <h1 align="center"> Nina Katarina Weiss</h1>
+  <h2 align="center">Kalkulaator</h2>
+  <div id="darkBtn">
+    <button class="darkModeBtn" onclick="darkMode()" >Vaheta reziimi</button>
+</div>
+  
+
+    <div class="calc-parent">
+        <div id="output" class="output">
+           
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+            
+        </div> 
+        
+            <button data-all-clear class="span-two test">AC</button>
+            <button data-operation class="test">log</button>
+            <button data-delete class="span-two test">DEL</button>
+            <button data-number class="test">1</button>
+            <button data-number class="test">2</button>
+            <button data-number class="test">3</button>
+            <button data-operation class="test">÷</button>
+            <button data-operation class="test">*</button>
+            <button data-number class="test">4</button>
+            <button data-number class="test">5</button>
+            <button data-number class="test">6</button>
+            <button data-operation class="test">+</button>
+            <button data-operation class="test">-</button>
+            <button data-number class="test">7</button>
+            <button data-number class="test">8</button>
+            <button data-number class="test">9</button>
+            <button data-operation class="test">cos</button>
+            <button data-operation class="test">x²</button>
+            <button data-number class="test">0</button>
+            <button data-number class="test">.</button>
+            <button data-operation class="test">√</button>
+            <button data-equals class="span-two test">=</button>
+    </div>
+    <div class = "calc-history" id="history">
+
+    </div>
+</body>
+</html>
