@@ -1,3 +1,14 @@
+Taavi Vestel
+
+Kalkulaatori tegemisel kasutati tutorial videot. https://www.youtube.com/watch?v=j59qQ7YWLxw
+Ise sai lisatud ruutjuure ruudu, kuubi ja 10nd logaritmi funktsioonid.
+Samuti on nupust võimalik vahetada öö ja päeva vaate vahel.
+Lisaks sai muudetud ka veebilehe scrollbari, ilu eesmärgil.
+
+http://www.tlu.ee/~vestel/Homework%203_1/
+
+
+
 # 3kodutoo - 15 punkti
 3. kodutöö Eesrakenduste arendamises.
 
