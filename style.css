@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+}
+
+.day{
+    background-color: white;
+    color: black;
+}
+
+.night{
+    background-color: rgb(51, 48, 48);
+    color: #C89FA3;
+}
+
+.calc-btn{
+    background-color: #2A628F;
+    color: white;
+    width: 60px;
+    height: 45px;
+    border: 1px solid #C89FA3;
+    text-align: center;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 3px;
+}
+
+.calc-operator:hover{
+    background-color: #C89FA3;
+}
+
+.calc-num:hover{
+    background-color: #6C91BF;
+}
+
+.row{
+    display: table;
+    table-layout: fixed;
+    width: 330px;
+}
+
+.column{
+    display: table-cell;
+}
+
+#zero{
+    width: 122.66666667px;
+}
+
+#clear{
+    width: 122.66666667px;
+}
+
+#tan{
+    border-radius: 0 0 0 7px;
+
+}
+
+#calc-display{
+    height: 80px;
+    color: white;
+    text-align: right;
+    border-left: 1px solid #C89FA3;
+    border-right: 1px solid #C89FA3;
+    border-top: 1px solid #C89FA3;
+    font-size: 48px;
+    background-color: #2A628F;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.calc-operator{
+    background-color: #A67F8E;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#equals{
+    border-radius: 0 0 7px 0;
+}
+
+#parent{
+    margin-left: calc(50% - 165px);
+}
+
