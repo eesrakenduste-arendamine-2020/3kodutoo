@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalcStyle.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="script.js"></script>
+    <title>Kodutöö #3 Rainer Halanurm</title>
+</head>
+<body>
+    <div class="extra" id="extra">
+        <button class="mode remove" id="mode">Night mode</button><br>
+        <button class="repo remove" id="repo">Repositoorium</button>
+        <p class="text remove" id="name">Rainer Halanurm</p>  
+    </div>
+    <div class="calculator" id="calculator">
+        <div class="screen remove" id="screen">
+            <div class="previous remove" id="previous">
+                <p id="previousValue"></p>
+            </div>
+            <div class="current  remove" id="current">
+                <p id="currentValue"></p>
+            </div>
+        </div>
+        <button class="special big" id="CE">CE</button>
+        <button class="special big" id="DEL">DEL</button>
+        <button class="special" id="X2">x<sup>2</sup></button>
+        <button class="special" id="PI">&#x3C0;</button>
+        <button class="special" id="SQR">&#8730;</button>
+        <button class="special" id="/">&#247;</button>
+        <button class="number" id="7">7</button>
+        <button class="number" id="8">8</button>
+        <button class="number" id="9">9</button>
+        <button class="special" id="*">X</button>
+        <button class="number" id="4">4</button>
+        <button class="number" id="5">5</button>
+        <button class="number" id="6">6</button>
+        <button class="special" id="-">-</button>
+        <button class="number" id="1">1</button>
+        <button class="number" id="2">2</button>
+        <button class="number" id="3">3</button>
+        <button class="special" id="+">+</button>
+        <button class="number move2" id="0">0</button>
+        <button class="special" id="empty"></button>
+        <!--<button class="special" id=".">.</button>-->
+        <button class="special big move" id="=">=</button>
+    </div>
+    <div class="history remove" id="history">
+        <p id="text"></p>
+    </div>
+    
+</body>
+</html>
