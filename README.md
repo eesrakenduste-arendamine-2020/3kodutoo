@@ -4,4 +4,4 @@
 Kalkulaator töötab, kasutusele on võetud log, exponentsiaalid, absoluutväärtus, ceil, floor, x^3, ümardamine.
 Vaatasin: https://www.youtube.com/watch?v=j59qQ7YWLxw
 
-![](https://i.imgur.com/a/uwQ7Juv)
+![pilt](https://i.imgur.com/a/uwQ7Juv)
