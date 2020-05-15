@@ -6,8 +6,8 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link href="style.css" rel="stylesheet">
-    
+    <link href="style.css" rel="stylesheet" id="cssheet">
+    <script src="script.js" defer></script>
     
     <title>Calculator</title>
 </head>
@@ -15,7 +15,7 @@
       <p>CALCULATOR</p>
       
       <div id="calculator">
-            
+            <button data-daynight>Light mode</button>
             <form>
                   <input type="text" id="display" disabled><br/>
                   <input type="button" value="C" id="keys" onClick="addToScreen('C')">
@@ -50,7 +50,7 @@
                   <input type="button" value="log" id="keys" onClick="log()">
                   <input type="button" value="round" id="keys" onClick="round()">
                   <input type="button" value="=" id="equal" onClick="answer()"><br>
-                  <button data-daynight>Light mode</button>
+                  
 
 
 
@@ -63,6 +63,6 @@
         <a/>
         </div>
       
-      <script src="script.js"></script>
+      
 
 </html>

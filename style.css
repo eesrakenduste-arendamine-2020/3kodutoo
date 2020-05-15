@@ -1,13 +1,13 @@
 body{
-    background: #969595;
+    background: #5c5c5c;
 }
 
 #calculator{
     width: 370px;
-    height: 490px;
+    height: 530px;
     border: 1px solid black;
     text-align: center;
-    background: black;
+    background: rgb(19, 17, 17);
     margin: 70px auto;
     box-shadow: 0px 0px 30px gray;
 }
@@ -45,7 +45,7 @@ p{
     margin-bottom: 20px;
     cursor: pointer;
     color: aquamarine;
-    background: black;
+    background: rgb(24, 24, 24);
 }
 
 #keys:hover, #equal:hover{
