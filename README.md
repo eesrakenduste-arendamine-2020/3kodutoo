@@ -14,3 +14,7 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 1. Autori ees- ja perenimi on lehel välja toodud
 1. Lehel on viide rakenduse repositooriumile
 1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+
+Nimi: Rainer Halanurm
+disaini idee on saadud https://youtu.be/j59qQ7YWLxw ja kasutasin seda sellepärast, et ta kasutas selle tegemiseks grid lahendust ja kuna me olime ühe teise kursuse raames vaatasime gridi siis võtsin selle, kuna tahtsin lähemalt gridiga tutvuda.
+Kalkulaatoriga saab liita, lahutada, korrutada, jagada, võtta ruutjuurt, kasutada PI-d, võtta arve ruutu. CE kustutab 1 numbri ära ja DEL kustutab terve sisestuse ära. Alla paremale tulevad kõik arvutused, mis on selle sessiooni jooksul tehtud ning lisaks on kalkulaatoril DAY/NIGHT mode.
