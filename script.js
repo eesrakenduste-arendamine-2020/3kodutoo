@@ -70,17 +70,3 @@ function round(){
 }
 
 
-
-darkMode(counter) {
-    if (counter % 2 != 0){
-        cssheet.setAttribute("href", "dark.css");
-    }else{
-        cssheet.setAttribute("href", "style.css");
-    }
-}
-const darkModeButton = document.querySelector("[data-daynight]");
-darkModeButton.addEventListener("click", (button) => {
-    counter++;
-    calculator.darkMode(counter);
-  });
-
