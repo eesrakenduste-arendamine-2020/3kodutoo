@@ -7,6 +7,5 @@ Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasut
 
 Kalkulaator töötab, kasutusele on võetud log, exponentsiaalid, absoluutväärtus, ceil, floor, x^3, ümardamine.
 Vaatasin: https://www.youtube.com/watch?v=j59qQ7YWLxw
+
 ![pilt](https://imgur.com/7nOQLmi)
-
-
