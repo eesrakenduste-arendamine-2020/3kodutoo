@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="style.css" rel="stylesheet">
+    <link href="dark.css" rel="stylesheet">
+    
+    <title>Calculator</title>
+</head>
+<body>
+      <p>CALCULATOR</p>
+      
+      <div id="calculator">
+            
+            <form>
+                  <input type="text" id="display" disabled><br/>
+                  <input type="button" value="C" id="keys" onClick="addToScreen('C')">
+                  <input type="button" value="<--" id="keys" onClick="backSpace()">
+                  <input type="button" value="sqrt" id="keys" onClick="squareRoot()">
+                  <input type="button" value="x^3" id="keys" onClick="power(3)"><br>
+
+                  <input type="button" value="9" id="keys" onClick="addToScreen('9')">
+                  <input type="button" value="8" id="keys" onClick="addToScreen('8')">
+                  <input type="button" value="7" id="keys" onClick="addToScreen('7')">
+                  <input type="button" value="+" id="keys" onClick="addToScreen('+')"><br>
+
+                  <input type="button" value="6" id="keys" onClick="addToScreen('6')">
+                  <input type="button" value="5" id="keys" onClick="addToScreen('5')">
+                  <input type="button" value="4" id="keys" onClick="addToScreen('4')">
+                  <input type="button" value="-" id="keys" onClick="addToScreen('-')"><br>
+                   
+                  <input type="button" value="3" id="keys" onClick="addToScreen('3')">
+                  <input type="button" value="2" id="keys" onClick="addToScreen('2')">
+                  <input type="button" value="1" id="keys" onClick="addToScreen('1')">
+                  <input type="button" value="*" id="keys" onClick="addToScreen('*')"><br>
+
+                  <input type="button" value="0" id="keys" onClick="addToScreen('0')">
+                  <input type="button" value="." id="keys" onClick="addToScreen('.')">
+                  <input type="button" value="%" id="keys" onClick="addToScreen('%')">
+                  <input type="button" value="/" id="keys" onClick="addToScreen('/')"><br>
+
+                  <input type="button" value="abs" id="keys" onClick="abs()">
+                  <input type="button" value="ceil" id="keys" onClick="ceil('8')">
+                  <input type="button" value="flr" id="keys" onClick="floor('7')">
+                  <input type="button" value="exp" id="keys" onClick="exp('+')"><br>
+                  <input type="button" value="log" id="keys" onClick="log()">
+                  <input type="button" value="round" id="keys" onClick="round()">
+                  <input type="button" value="=" id="equal" onClick="answer()"><br>
+                  <button data-daynight>Light mode</button>
+
+
+
+            </form>
+      </div>
+      
+      
+      <script src="script.js"></script>
+
+</html>
