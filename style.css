@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+body{
+    background-color: beige;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    justify-content: center;
+   
+}
+
+body.night {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: whitesmoke
+   }
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 60vh;
+    grid-template-columns: repeat(5, 75px);
+    grid-template-rows: minmax(110px, auto) repeat(5, 75px);
+   
+    
+    
+   
+}
+
+.calculator > button {
+  
+    background-color: palevioletred;
+    color: white;
+    font-size: x-large;
+    border-radius: 25px;
+    border: black;
+    
+    
+}
+
+.calculator > button:hover {
+
+        
+background-color:lightblue;
+    
+  
+}
+
+.span-two.test {
+    grid-column: span 2;
+}
+
+.span-three.test {
+    grid-column: span 3;
+}
+
+.daynight {
+    grid-column: 1 / -1;
+    background-color: seashell;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.daynight .previous-operand {
+    color: pink;
+    font-size: 32px;
+}
+
+.daynight .current-operand {
+    color: black;
+    font-size: 32px;
+}
+
+.history {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.history-elements {
+    color:green;
+    font-size: xx-large;
+    background-color: transparent;
+}
