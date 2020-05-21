@@ -1,16 +1,13 @@
-# 3kodutoo - 15 punkti
-3. kodutöö Eesrakenduste arendamises.
+Calculator
 
-## Tähtaeg 02.05.2020 23:59
+Timofey Shapovalov 
 
-Kujundada ja programmeerida iseseisvalt töötav kalkulaator. Võib vabalt kasutada aluseks mõnda youtube'ist leitavad õpetust: https://www.youtube.com/results?search_query=javascript+calculator+tutorial - tutorial tuleb README failis ära märkida ning tulemus peab erinema õpetusest disain osas ja mõtlema juurde ise funktsionaalsuseid (tangensid, koosiinused, siinused, astmed, ruutjuured, logaritmid, exponentsiaalid, kahendsüsteem, mällu salvestamine jne).
+Tavaline kalkulaator, mis liidab, lahutab, jagab ja korrutab.
 
-## Nõuded
+kalkulaatori näide võetud siit ja muuddetud
 
-1. Veebirakendus töötab.
-1. Kalkulaatoril on öö- ja päevarežiim. 
-1. Kui kasutatud on mõnda õpetust, siis see on README-s ära märgitud ning lisatud sinna ise vähemalt 3 kalkuleerimisfunktsionaalsust
-1. Lisatud on ajaloo funktsionaalsus - näidatakse varasemalt tehtud arvutusi (sama sessiooni jooksul). 
-1. Autori ees- ja perenimi on lehel välja toodud
-1. Lehel on viide rakenduse repositooriumile
-1. `README.md` failis on välja toodud autori nimi, ekraanipilt rakendusest ja kirjeldatud funktsionaalsus
+ksutatud allikad: 
+https://codepen.io/joshLongmire3/pen/RRGWmd
+
+greeny:
+http://greeny.cs.tlu.ee/~timofsha/Eesrakenduste%20arendamine/HomeWork%203/
